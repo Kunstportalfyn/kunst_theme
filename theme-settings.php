@@ -32,33 +32,6 @@ function kunst_theme_form_system_theme_settings_alter(&$form, &$form_state) {
       'dark' => t('Dark'),
      ),
   );
-  $form['kunst_theme_settings']['layout'] = array(
-    '#type'          => 'fieldset',
-    '#title'         => t('Layout'),
-    '#weight' => -2,
-    '#description'   => t("Select a layout for the Sidebar."),
-  );
-
-  $form['kunst_theme_settings']['layout']['sidebar_layout'] = array(
-    '#type'          => 'select',
-    '#title'         => t('Sidebar'),
-    '#default_value' => theme_get_setting('sidebar_layout', 'kunst_theme'),
-    '#description'   => t('Select a layout for the Sidebar to be displayed (Right hand side or Left hand side).'),
-    '#options'       => array(
-      'right_sidebar' => t('Right Sidebar'),
-      'left_sidebar' => t('Left Sidebar'),
-     ),
-  );
-  $form['kunst_theme_settings']['layout']['sidebar_width'] = array(
-    '#type'          => 'select',
-    '#title'         => t('Sidebar Width'),
-    '#default_value' => theme_get_setting('sidebar_width', 'kunst_theme'),
-    '#description'   => t('Select the width of the Sidebar. (Narrow or Wide)'),
-    '#options'       => array(
-      'narrow_sidebar' => t('Narrow Sidebar'),
-      'wide_sidebar' => t('Wide Sidebar'),
-     ),
-  );
   $form['kunst_theme_settings']['image_logo'] = array(
     '#type' => 'checkbox',
     '#title' => t('Show <strong>Image Logo</strong> instead of text logo in a page'),

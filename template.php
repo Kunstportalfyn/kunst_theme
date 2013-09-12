@@ -31,14 +31,6 @@ function kunst_theme_preprocess_html(&$vars) {
   for($i=0; $i<count($classes); $i++){
     $vars['classes_array'][] = $classes[$i];
   }
-  $sidebar_layout = theme_get_setting('sidebar_layout', 'kunst_theme');
-  if($sidebar_layout == 'left_sidebar') {
-    $vars['classes_array'][] = 'left-sidebar';
-  }
-  $sidebar_width = theme_get_setting('sidebar_width', 'kunst_theme');
-  if($sidebar_width == 'wide_sidebar') {
-    $vars['classes_array'][] = 'wide-sidebar';
-  }
 }
 
 /**

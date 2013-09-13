@@ -101,8 +101,36 @@ function kunst_theme_preprocess_node(&$variables) {
     $variables['classes_array'][] = 'node-full';
   }
   $variables['date'] = t('!datetime', array('!datetime' =>  date('l, j F Y', $variables['created'])));
+  //added open graph meta tags for facebook.
+  if(isset($node)){
+    $site_name = variable_get('site_name');
+    $og_title = $node->title . ($site_name ? ' | ' . $site_name : '');
+    $og_description = isset($node->	field_lead[LANGUAGE_NONE][0]) ? drupal_substr(check_plain(strip_tags($node->field_lead[LANGUAGE_NONE][0]['safe_value'])), 0, 100) . '..' : '';
+    $og_image = isset($node->field_image[LANGUAGE_NONE][0]) ? file_create_url($node->field_image[LANGUAGE_NONE][0]['uri'], array('absolute' => TRUE)) : '';
+    drupal_add_html_head(array(
+      '#tag' => 'meta',  
+      '#attributes' => array(
+        'property' => 'og:title',
+        'content' => $og_title,
+      ),
+    ), 'node_' . $node->nid . '_og_title');
+    drupal_add_html_head(array(
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'property' => 'og:description',
+        'content' => $og_description,
+      ),
+    ), 'node_' . $node->nid . '_og_description');
+ 
+    drupal_add_html_head(array(
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'property' => 'og:image',
+        'content' => $og_image,
+      ),
+    ), 'node_' . $node->nid . '_og_image');
 }
-
+}
 function kunst_theme_page_alter($page) {
   // <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   $viewport = array(

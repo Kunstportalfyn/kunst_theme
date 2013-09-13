@@ -176,4 +176,12 @@
   .tb-megamenu .nav > li {
     width: 100%;
   }
+  
+  .tb-megamenu .mega-inner {
+    background-color: #fff!important;
+  }
+  
+  .tb-megamenu .mega-inner a{
+    color: #000!important;
+  }
 }

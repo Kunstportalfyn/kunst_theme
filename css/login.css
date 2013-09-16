@@ -1,0 +1,60 @@
+#block-user-login{
+  position: relative;
+  float: right;
+}
+
+#block-user-login .login-wrapper{
+  border: 1px solid #000;
+  display: none;
+  height: 180px;
+  right: 0;
+  position: absolute;
+  top: 32px;
+  width: 128px;
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: 6px;
+  padding: 10px;
+  z-index: 10001;
+}
+
+#block-user-login .icon-user {
+  display: block;
+  float: left;
+  left: 16px;
+  top: 58px;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  position: absolute;
+  z-index: 3;
+}
+#block-user-login .icon-lock {
+  display: block;
+  float: left;
+  left: 16px;
+  top: 106px;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  position: absolute;
+  z-index: 3;
+}
+
+#block-user-login input[type=password],
+#block-user-login input[type=text] {
+  padding-left: 18px;
+  width: auto!important;
+}
+
+#block-user-login input[type=submit] {
+  float: right;
+  margin-left: 10px;
+}
+
+.position_wrapper {
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  top: 100px;
+  width: 80px;
+  padding-right: 2.1em;
+}

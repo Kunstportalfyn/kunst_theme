@@ -141,7 +141,6 @@ function kunst_theme_page_alter($page) {
     'content' =>  'width=device-width, initial-scale=1, maximum-scale=1'
     )
   );
-  drupal_add_html_head($viewport, 'viewport');
 }
 
 /**
@@ -151,3 +150,28 @@ if (theme_get_setting('color_scheme', 'kunst_theme') == 'dark') {
   drupal_add_css(drupal_get_path('theme', 'kunst_theme') . '/css/color-schemes.css');
 }
 
+/**
+ * Implements hook_form_alter
+ *
+ * @param array $form
+ *   form obj
+ * @param array $form_state
+ *   form state obj
+ * @param string $form_id
+ *   form id
+ */
+function kunst_theme_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    case 'user_login_block':
+      $form['name']['#prefix'] = '<i class="icon-user"></i>';
+      unset($form['name']['#title']);
+      $form['name']['#attributes']['placeholder'] = t('Username');
+      $form['pass']['#attributes']['placeholder'] = t('Password');
+      $form['pass']['#prefix'] = '<i class="icon-lock"></i>';
+      unset($form['pass']['#title']);
+      $form['links']['#markup'] = "";
+      $form['actions']['submit']['#attributes']['class'][] = 'btn';
+      $form['actions']['submit']['#attributes']['class'][] = 'btn-info';
+      break;
+  }
+}

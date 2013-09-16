@@ -4,9 +4,6 @@
  * 4dc6f3 (l blue) -> ffffff (white)
  * e54e4b (red) ->
  */
-.tb-megamenu {
-  background-color: #c00;
-}
 .tb-megamenu:before,
 .tb-megamenu:after {
   content: "";

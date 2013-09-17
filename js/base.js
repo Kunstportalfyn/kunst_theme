@@ -3,12 +3,8 @@
  * and open the template in the editor.
  */
 (function($){
-  $.fn.loginBox = function(option){
-    if (option == "login"){
-      login();
-    } else if(option = "logout"){
-      logout();
-    }
+  $.fn.loginBox = function(){
+    login();
   };
 
   var loginForm = "";
@@ -35,7 +31,7 @@
   }
 
   function showLoginButton(){
-    var onclick = "jQuery.fn.loginBox('login')";
+    var onclick = "jQuery.fn.loginBox()";
     var html = '<button type="button" onclick="' + onclick + '">' + Drupal.t("Login") + '</button>';
     $('#block-user-login').prepend(html).wrap('<div class="position_wrapper"/>');
   }

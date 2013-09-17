@@ -547,3 +547,7 @@ html[xmlns] .clearfix2 {
 * html .clearfix2 {
   height: 1%;
 }
+
+.tb-megamenu {
+  background-color: transparent;
+}

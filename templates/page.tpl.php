@@ -118,19 +118,6 @@
   <div id="main" class="clearfix">
     <div id="primary">
       <section id="content" role="main">
-        <?php if ($is_front): ?>
-        <?php if (theme_get_setting('slideshow_display','kunst_theme')): ?>
-        <?php 
-        $slide1_url = check_plain(theme_get_setting('slide1_url','kunst_theme'));
-        $slide2_url = check_plain(theme_get_setting('slide2_url','kunst_theme'));
-        $slide3_url = check_plain(theme_get_setting('slide3_url','kunst_theme'));
-        $slide1_desc = check_markup(theme_get_setting('slide1_desc', 'kunst_theme'), 'full_html'); 
-        $slide2_desc = check_markup(theme_get_setting('slide2_desc', 'kunst_theme'), 'full_html'); 
-        $slide3_desc = check_markup(theme_get_setting('slide3_desc', 'kunst_theme'), 'full_html'); 
-        ?>
-        <?php endif; ?>
-        <?php endif; ?>
-
         <?php print $messages; ?>
         <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>
           <?php if (theme_get_setting('breadcrumbs')): ?><?php if ($breadcrumb): ?><div id="breadcrumbs"><?php print $breadcrumb; ?></div><?php endif;?><?php endif; ?>
@@ -146,7 +133,7 @@
     </div>
 
   </div>
-
+<?php if ($is_front): ?>
   <footer id="footer-bottom">
     <div id="footer-area" class="clearfix">
       <?php if ($page['bottom_first'] || $page['bottom_second'] || $page['bottom_third']): ?>
@@ -163,6 +150,7 @@
         </div>
       <?php endif; ?>
     </div>
+<?php endif; ?>  
        
 
     <div id="footer-bottom" class="clearfix">

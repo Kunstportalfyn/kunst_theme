@@ -41,7 +41,6 @@ settings[breadcrumbs]  = 1
 settings[socialicon_display]  = 1
 settings[facebook_url]  = "http://www.facebook.com/kunstportalfyn"
 settings[twitter_url]  = "http://www.twitter.com/kunstportalfyn"
-settings[pinterest_url]  = "http://pinterest.com"
 
 ; Information added by drupal.org packaging script on 2013-09-02
 version = "7.x-1.7"

@@ -69,10 +69,4 @@ function kunst_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('facebook_url', 'kunst_theme'),
     '#description'   => t("Enter your Facebook Profile URL. Leave blank to hide."),
   );
-  $form['kunst_theme_settings']['socialicon']['pinterest_url'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Pinterest Address'),
-    '#default_value' => theme_get_setting('pinterest_url', 'kunst_theme'),
-    '#description'   => t("Enter your Pinterest URL. Leave blank to hide."),
-  );
 }

@@ -83,21 +83,20 @@
         <?php 
         $twitter_url = check_plain(theme_get_setting('twitter_url', 'kunst_theme')); 
         $facebook_url = check_plain(theme_get_setting('facebook_url', 'kunst_theme')); 
-        $pinterest_url = check_plain(theme_get_setting('pinterest_url', 'kunst_theme'));
         ?>
       <div class="social-profile">
         <ul>
-          <?php if ($facebook_url): ?><li class="facebook">
-            <a target="_blank" title="<?php print $site_name; ?> in Facebook" href="<?php print $facebook_url; ?>"><?php print $site_name; ?> Facebook </a>
-          </li><?php endif; ?>
-          <?php if ($twitter_url): ?><li class="twitter">
-            <a target="_blank" title="<?php print $site_name; ?> in Twitter" href="<?php print $twitter_url; ?>"><?php print $site_name; ?> Twitter </a>
-          </li><?php endif; ?>
-          <?php if ($pinterest_url): ?><li class="pinterest">
-            <a target="_blank" title="<?php print $site_name; ?> in Pinterest" href="<?php print $pinterest_url; ?>"><?php print $site_name; ?> Twitter </a>
-          </li><?php endif; ?>
-          <li class="rss">
-            <a target="_blank" title="<?php print $site_name; ?> in RSS" href="<?php print $front_page; ?>rss.xml"><?php print $site_name; ?> RSS </a>
+          <?php if ($facebook_url): ?>
+          <li><a target="_blank" title="<?php print $site_name; ?> in Facebook" href="<?php print $facebook_url; ?>">
+          <i class="icon-facebook-sign" ></i>
+          </a>
+            </li>
+          <?php endif; ?>
+          <?php if ($twitter_url): ?>
+          <li><a target="_blank" title="<?php print $site_name; ?> in Twitter" href="<?php print $twitter_url; ?>"><i class="icon-twitter-sign" > </i></a></li>
+          <?php endif; ?>
+          <li>
+            <a target="_blank" title="<?php print $site_name; ?> in RSS" href="<?php print $front_page; ?>rss.xml"> <i class="icon-rss-sign" > </i></a>
           </li>
         </ul>
       </div>

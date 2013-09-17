@@ -1,6 +1,8 @@
 #block-user-login{
   float: right;
   position: relative;
+  width: 100px;
+  height: 0px;
 }
 
 #block-user-login .login-wrapper{
@@ -13,7 +15,7 @@
   padding: 10px;
   position: absolute;
   right: 0;
-  top: 28px;
+  top: -8px;
   width: 128px;
   z-index: 10001;
 }
@@ -43,10 +45,12 @@
   width: 92%!important;
 }
 
-#block-user-login button[type=button] {
+#block-search-form button[type=button] {
   font-size: 13px;
   font-weight: normal;
   padding: 2px 6px;
+  float: right;
+  margin-left: 4px;
 }
 
 #block-user-login input[type=submit] {
@@ -57,8 +61,11 @@
 .position_wrapper {
   height: 40px;
   padding-right: 3%;
+  /*
   position: absolute;
   right: 0px;
   top: 100px;
+  */
+  float: right;
   width: 60px;
 }

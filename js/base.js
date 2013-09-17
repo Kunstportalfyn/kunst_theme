@@ -33,7 +33,7 @@
   function showLoginButton(){
     var onclick = "jQuery.fn.loginBox()";
     var html = '<button type="button" onclick="' + onclick + '">' + Drupal.t("Login") + '</button>';
-    $('#block-user-login').prepend(html).wrap('<div class="position_wrapper"/>');
+    $('#block-search-form').prepend(html);//.wrap('<div class="position_wrapper"/>');
   }
 
   $().ready(function(){

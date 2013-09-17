@@ -880,10 +880,10 @@ input[type="button"].full-width {
 width: 100%; padding-left: 0 !important; padding-right: 0 !important; text-align: center; }
 
 .region-header #block-search-form {
-    float: right;
-    margin-top: 25px;
+  float: right;
+  margin-top: 25px;
 }
-.region-header #block-search-form .form-item-search-block-form .form-text { width: 20em; }
+
 #block-search-form { padding-bottom: 7px; }
 
 #block-search-form .content { margin-top: 0; }
@@ -1264,6 +1264,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   font-size: 16px;
 }
 
+.region-header #block-search-form .form-item-search-block-form .form-text { width: 20em; }
 
 
 /* =Responsive Structure
@@ -1280,6 +1281,15 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 }
 
 @media screen and (max-width: 960px) {
+  .region-header #block-search-form .form-item-search-block-form .form-text {
+    width: 13em;
+  }
+  
+  .region-header #block-search-form div.content {float: left}
+  
+  .region-header #block-search-form {
+    margin-top: 18px;
+  }
   /*  ipad */
   #wrapper {
     max-width: 708px;
@@ -1342,6 +1352,17 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 }
   
 @media screen and (max-width: 767px) {
+  .region-header #block-search-form .form-item-search-block-form .form-text {
+    width: 83%;
+  }
+  
+  .region-header #block-search-form div.content {width: 85%;}
+  
+  .region-header #block-search-form {
+    margin-top: 8px;
+    width: 100%;
+        
+  }
   /*  small tablet */
   #wrapper {
     max-width: 480px;
@@ -1424,15 +1445,18 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   }
 }
 @media (max-device-width: 650px) {  
+  .region-header #block-search-form .form-item-search-block-form .form-text {
+    width: 30em;
+  }
   .tinynav {
     background-image: url("images/select-arrow.png");
   }
 }
 @media screen and (max-width: 479px) {
   /*  iphone */
-  #wrapper {
+  /*#wrapper {
     max-width: 320px;
-  }
+  }*/
   #site-name {
     font-size: 26px;
     line-height: 36px;

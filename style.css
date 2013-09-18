@@ -1481,10 +1481,11 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   }
 }
 
-@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+@media only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
    /* CSS overrides for mobile here */
   .region-header #block-search-form .form-item-search-block-form .form-text {
-    width: 320px;
+    width: 320px!important;
+    border: 1px solid red;
   }
 }
 

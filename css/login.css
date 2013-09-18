@@ -71,3 +71,9 @@
   float: right;
   width: 60px;
 }
+@media screen and (max-width: 767px) {
+  #block-search-form button[type=button] {
+    position: absolute;
+    right: 10px;
+  }
+}

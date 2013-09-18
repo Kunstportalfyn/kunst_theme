@@ -1261,12 +1261,10 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   font-size: 16px;
 }
 
-.region-header #block-search-form .form-item-search-block-form .form-text { width: 20em; }
-
 
 /* =Responsive Structure
 ----------------------------------------------- */
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 961px) {
   .region-header #block-search-form {
     margin-top: 18px;
     width: 380px;
@@ -1363,7 +1361,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   .region-header #block-search-form .form-item-search-block-form .form-text {
     position: absolute;
     right: 100px;
-    width: 70%;
+    width: 60%;
     width: -webkit-calc(100% - 130px);
     width: -o-calc(100% - 130px);
     width: -moz-calc(100% - 130px);

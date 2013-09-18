@@ -76,4 +76,8 @@
     position: absolute;
     right: 10px;
   }
+  
+  #block-user-login .login-wrapper {
+    top: 8px;
+  }
 }

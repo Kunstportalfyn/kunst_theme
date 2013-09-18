@@ -60,23 +60,14 @@
   margin-left: 10px;
 }
 
-.position_wrapper {
-  height: 40px;
-  padding-right: 3%;
-  /*
-  position: absolute;
-  right: 0px;
-  top: 100px;
-  */
-  float: right;
-  width: 60px;
-}
 @media screen and (max-width: 767px) {
-  #block-search-form button[type=button] {
+  #block-search-form button[type=button][name=log-out-button] {
     position: absolute;
     right: 10px;
   }
-  
+  #block-search-form button[type=button][name=logged-in-user] {
+    right: 27px;
+  }
   #block-user-login .login-wrapper {
     top: 8px;
   }

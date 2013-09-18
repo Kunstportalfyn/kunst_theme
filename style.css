@@ -883,7 +883,7 @@ width: 100%; padding-left: 0 !important; padding-right: 0 !important; text-align
 
 #block-search-form { padding-bottom: 7px; }
 
-#block-search-form .content { margin-top: 0; }
+#block-search-form .content { margin-top: 0;}
 
 #search-form input#edit-keys,
 #block-search-form .form-item-search-block-form input { float: left; font-size: 1em; height: 1.143em; margin-right: 5px; width: 9em; }
@@ -1265,17 +1265,30 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 /* =Responsive Structure
 ----------------------------------------------- */
 @media screen and (min-width: 961px) {
+
+
+}
+@media screen and (min-width: 1061px) {
   .region-header #block-search-form {
-    margin-top: 18px;
-    width: 380px;
+    width: 430px!important;
   }
+
   .region-header #block-search-form .form-item-search-block-form .form-text {
-    width: 18em;
+    width: 20em;
   }
 }
 
 /* Smaller than standard 1060 (devices and browsers) */
 @media screen and (max-width: 1060px) {
+  .region-header #block-search-form {
+    width: 390px!important;
+    margin-top: 19px;
+  }
+  
+  .region-header #block-search-form .form-item-search-block-form .form-text {
+    width: 17em;
+  }
+  
   #wrapper {
     max-width: 900px;
   }
@@ -1288,13 +1301,14 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 
 @media screen and (max-width: 960px) {
   .region-header #block-search-form .form-item-search-block-form .form-text {
-    width: 13em;
+    width: 12em;
   }
   
   .region-header #block-search-form div.content {float: left}
   
   .region-header #block-search-form {
     margin-top: 18px;
+    width: 310px!important;
   }
   /*  ipad */
   #wrapper {
@@ -1478,7 +1492,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 }
 @media (max-device-width: 650px) {  
   .region-header #block-search-form .form-item-search-block-form .form-text {
-    width: 30em;
+    /*width: 30em;*/
   }
   .tinynav {
     background-image: url("images/select-arrow.png");
@@ -1491,14 +1505,15 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
     width: 320px;
   }
 }
-
+/*
 @media only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
-   /* CSS overrides for mobile here */
+   /* CSS overrides for mobile here */ /*
   .region-header #block-search-form .form-item-search-block-form .form-text {
     width: 160px!important;
     border: 1px solid red;
   }
 }
+*/
 
 @media screen and (max-width: 479px) {
 

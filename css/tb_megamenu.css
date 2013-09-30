@@ -218,7 +218,7 @@
   float: left;
   min-width: 140px;
   list-style: none;
-  background-color: #eee;
+  background-color: #EEE;
   /*border: 1px solid #ccc;*/
   border: 1px solid rgba(0,0,0,0.2);
   /*border-bottom: 1px solid #222!important; /* e65855 */
@@ -233,7 +233,7 @@
   -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
+  -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
 .tb-megamenu .dropdown-menu.pull-right {

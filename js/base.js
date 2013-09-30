@@ -7,11 +7,6 @@
     login();
   };
 
-  $.fn.hasScrollBar = function() {
-    console.log(this[0]);
-    return this.get(0).scrollHeight > this.innerHeight();
-  }
-
   var loginForm = "";
 
   function login() {
@@ -52,11 +47,9 @@
 
   function setSearchFieldWidth() {
     var ddt = $( window ).width();
-    console.log("\n\n\n" + ddt + "\n\n\n");
     if(ddt < 768) {
       var boxWidth = $("#header").width();
       var editBoxWidth = boxWidth - 140;
-      // console.log("D: " + ddt + "boxWidth: " + boxWidth);
       $(".region-header #block-search-form .form-item-search-block-form .form-text").width(editBoxWidth);
       tmp = true;
     } else {
@@ -79,7 +72,6 @@
   });
   
   $(window).resize(function() {
-    $(window).hasScrollBar();
     setSearchFieldWidth();
   });
 })(jQuery);

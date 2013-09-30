@@ -55,7 +55,7 @@
   display: none;
   float: left;
   padding: 10px;
-  margin: 0;
+  margin: 0!important;/* 10 */
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
   background-color: #e8e8e8;  
@@ -554,4 +554,18 @@ html[xmlns] .clearfix2 {
 
 .tb-megamenu {
   background-color: transparent;
+}
+
+@media (max-width: 738px) {
+  .tb-megamenu .nav-collapse .nav li a {
+    /* Border fix	*/
+    border: 0;
+  }
+}
+
+button.btn.btn-navbar.tb-megamenu-button i.icon-reorder {
+  min-width: 10px;
+  min-height: 10px;
+  margin: 4px;
+  border: 1px solid red;
 }

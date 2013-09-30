@@ -1,7 +1,7 @@
 #block-user-login{
   float: right;
   position: relative;
-  width: 100px;
+  width: 150px;
   height: 0px;
 }
 
@@ -60,15 +60,22 @@
   margin-left: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  #block-user-login {
+    right: 0;
+  }
+}
+  
 @media screen and (max-width: 767px) {
   #block-search-form button[type=button][name=log-out-button] {
     position: absolute;
     right: 10px;
   }
   #block-search-form button[type=button][name=logged-in-user] {
-    right: 27px;
+    right: 42px;
   }
+  
   #block-user-login .login-wrapper {
-    top: 8px;
+    top: -18px;
   }
 }

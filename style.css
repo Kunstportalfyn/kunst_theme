@@ -1,7 +1,30 @@
-/*
-www.devsaran.com
-*/
-
+/* responsive panel regions*/
+.boxes { 
+   margin:0 auto; 
+} 
+.box { 
+   display:inline-block; 
+} 
+.one { background:transparent;  } 
+.two {  
+   background:transparent;  
+} 
+.three { background:transparent; } 
+.four { background:transparent; }
+/* 768px */ 
+@media only screen and (max-width:48em) { 
+   .boxes {  
+      display:table; 
+      width:100%; 
+   } 
+   .box { 
+      display:block; 
+      width:100%; 
+   } 
+   .three { display:table-caption; } 
+   .four { display:table-header-group; } 
+   .one { display:table-footer-group; } 
+}
 /* =Reset
 -------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe,

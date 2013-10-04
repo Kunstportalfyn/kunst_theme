@@ -1,0 +1,158 @@
+/* 
+    Document   : responsive-menus
+    Created on : Oct 3, 2013, 9:19:03 AM
+    Author     : gorkha
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#block-menu-block-1 {
+  border: 0;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+#block-menu-block-1 > li {
+  border:1px #6cf!important;
+  margin-right: 20px;
+  padding: 3px 0px;
+  
+}
+
+#block-menu-block-1 div.content > div > ul.menu > li {
+  background-color: #60ae97;
+}
+
+#block-menu-block-1 div.content > div > ul.menu > li a {
+  color: #fff;
+}
+
+#block-menu-block-1 div.content > div > ul.menu > li a:hover {
+  color: #eee;
+}
+
+#block-menu-block-1 div.content > div > ul.menu > li > ul > li {
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+/*
+#block-menu-block-1 div.content > div > ul.menu > li > ul > li a {
+  color: #008ece;
+}
+
+#block-menu-block-1 div.content > div > ul.menu > li > ul > li a:hover {
+  color: #00aeee;
+}*/
+
+#block-menu-block-1 li.active-trail a{
+  background-color: #a42978;
+  color: #fff;
+}
+
+#block-menu-block-1 li.active-trail a:hover {
+  background-color: #c44998;
+  color: #fff;
+}
+
+#block-menu-block-1 h2 {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  #rm-removed li a {
+    color: #fff;
+  }
+  
+  #rm-removed > h2{
+    display: none;
+  }
+  
+  #rm-removed ul.menu {
+    padding: 0;
+    margin: 0 5% 0 5%;
+  }
+    
+  #rm-removed ul.menu li a {
+    padding: 6px 12px;
+    display: block;
+  }
+  
+  #rm-removed ul.menu > li > ul.menu {
+    margin: 0;
+  }
+  
+  #rm-removed ul.menu > li {
+    margin: 0px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #rm-removed ul.menu > li:last-child {
+    border-bottom: 0;
+  }
+  
+  #rm-removed ul.menu li a {
+    padding: 6px 12px;
+    display: block;
+  }
+  
+  #rm-removed ul.menu > li > ul.menu li {
+    border: 0;
+    margin-left: 10px;
+  }
+  
+  #rm-removed ul.menu li {
+    list-style-image: none;
+    list-style-type: none;
+  }
+  
+  #rm-removed li {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  #block-menu-block-1 div.content > div > ul.menu {
+    /* Fix for keeping breadcrumbs below the menu */
+    height: 10px;
+  }
+  #block-menu-block-1 div.content > div > ul.menu > li {
+    display: block;
+    width: 18%;
+    float: left;
+    overflow: visible;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  
+  #block-menu-block-1 div.content > div > ul.menu li a{
+    padding: 3px 6px;
+    display: block;
+    color: #fff;
+  }
+  
+  #block-menu-block-1 ul.menu li {
+    list-style-image: none;
+    list-style-type: none;
+  }
+  
+  #block-menu-block-1 li ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #block-menu-block-1 li ul li{
+    width: auto;
+    float: none;
+    height: 0px;
+    display: none;
+    padding: 0;
+    height: auto;
+    clear: both;
+    /*background-color: #d8d8d8;*/
+    /*border-bottom: 1px solid #fff;*/
+  }
+  
+  #block-menu-block-1 li ul li a:hover {
+    color: #000;
+  }
+}

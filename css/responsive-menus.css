@@ -9,18 +9,13 @@
 #block-menu-block-1 {
   border: 0;
   clear: both;
+  margin: 0;
   margin-bottom: 30px;
 }
 
-#block-menu-block-1 > li {
-  border:1px #6cf!important;
-  margin-right: 20px;
-  padding: 3px 0px;
-  
-}
-
-#block-menu-block-1 div.content > div > ul.menu > li {
+#block-menu-block-1 ul.menu > li {
   background-color: #60ae97;
+  position: relative;
 }
 
 #block-menu-block-1 div.content > div > ul.menu > li a {
@@ -120,8 +115,15 @@
     width: 18%;
     float: left;
     overflow: visible;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 2%;
+    margin-left: 0;
+  }
+
+  #block-menu-block-1 div.content > div > ul.menu > li > ul {
+    position: absolute;
+    top: 26px;
+    left: 0px;
+    min-width: 100%;
   }
   
   #block-menu-block-1 div.content > div > ul.menu li a{

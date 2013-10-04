@@ -16,6 +16,7 @@
 #block-menu-block-1 ul.menu > li {
   background-color: #60ae97;
   position: relative;
+  z-index: 10000;
 }
 
 #block-menu-block-1 div.content > div > ul.menu > li a {
@@ -121,7 +122,7 @@
 
   #block-menu-block-1 div.content > div > ul.menu > li > ul {
     position: absolute;
-    top: 26px;
+    top: 25px;
     left: 0px;
     min-width: 100%;
   }

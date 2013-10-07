@@ -235,9 +235,6 @@ p {
   margin-bottom: 2em;
 }
 ul, ol {
-  margin: 0 0 1em 1.5em;
-}
-.menu ul, ol {
   margin: 0;
 }
 ul {

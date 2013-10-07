@@ -88,7 +88,7 @@
   
       <?php if ($display_submitted): ?>
         <span class="submitted">
-        <?php print t('Posted by') . ' ' . $name; ?> <?php print t('on') . ' ' . $date; ?>
+        <?php print $date; ?>
         </span>
       <?php endif; ?>
 

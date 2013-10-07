@@ -12,7 +12,6 @@ scripts[] = js/base.js
 scripts[] = js/menu.js
 scripts[] = js/selectivizr-min.js
 regions[header]         = Header
-regions[preface]        = Preface
 regions[content_top]    = Content Top
 regions[content]        = Content
 regions[help]           = Help

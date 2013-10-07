@@ -82,16 +82,6 @@
     
   </header>
 
-  <div id="preface-area" class="clearfix">
-    <?php if($page['preface']) : ?>
-    <div id="preface-block-wrap" class="clearfix in<?php print (bool) $page['preface']; ?>">
-      <?php if($page['preface']): ?><div class="preface-block">
-        <?php print render ($page['preface']); ?>
-      </div><?php endif; ?>
-    </div>
-    <?php endif; ?>
-  </div>
-
   <div id="main" class="clearfix">
     <div id="primary">
       <section id="content" role="main">

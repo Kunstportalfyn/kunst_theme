@@ -88,7 +88,7 @@
   
       <?php if ($display_submitted): ?>
         <span class="submitted">
-        <?php print $date; ?>
+        <?php print render($content['field_category'][0]['#title']); ?> <?php print ' ' . $date; ?>
         </span>
       <?php endif; ?>
 

@@ -13,6 +13,17 @@
   margin-bottom: 30px;
 }
 
+#block-menu-block-1 div > div > ul.menu li div.expandable, #rm-removed div > div > ul.menu li div.expandable {
+  display: none;
+  height: 12px;
+  width: 12px;
+  float: right;
+}
+
+#block-menu-block-1 div > div > ul.menu li.expanded div.expandable, #rm-removed div > div > ul.menu li.expanded div.expandable {
+  display: block;
+}
+
 #block-menu-block-1 ul.menu > li {
   background-color: #60ae97;
   position: relative;

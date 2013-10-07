@@ -1,0 +1,30 @@
+#block-menu-block-1 ul {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+#block-menu-block-1 ul li {
+  display: block;
+  width: 18%;
+  float: left;
+  margin-right: 2%;
+}
+
+#block-menu-block-1 ul li a {
+  display: block;
+  padding: 4px 12px!important;
+}
+
+#block-menu-block-1 ul li ul {
+  list-style-type: none!important;
+  
+}
+
+#block-menu-block-1 ul li ul li {
+  width: 100%;
+  display: none;
+  list-style-image: none;
+  list-style-type: none;
+}

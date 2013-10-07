@@ -42,6 +42,7 @@
 #block-user-login input[type=password],
 #block-user-login input[type=text] {
   text-indent: 16px;
+  line-height: 16px;
   width: 92%!important;
 }
 

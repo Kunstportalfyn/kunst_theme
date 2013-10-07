@@ -169,7 +169,7 @@ body {
 }
 
 .no-sidebars #primary{
-  margin: 0;
+  margin-bottom: 1em;
 }
 .no-sidebars #content{
   margin: 0 3%;
@@ -235,7 +235,7 @@ p {
   margin-bottom: 2em;
 }
 ul, ol {
-  margin: 0 0 1em 1.5em;
+  margin: 0;
 }
 ul {
   list-style: disc;
@@ -426,14 +426,11 @@ td{
 
 /* =Content
 ----------------------------------------------- */
-#preface-area {
-  padding-bottom: 5px;
-}
 
 #main {
   background-color: #fff;
   clear: both;
-  padding: 2em 0 0;
+  padding: 1em 0 0;
 }
 
 .node h2.title, h1.page-title, .node h2.title a, h1.page-title a {
@@ -476,7 +473,6 @@ td{
   margin-bottom: 1em;
 }
 
-#preface-area .block,
 .region-content-top .block,
 #footer-area .block {
   background-color: #FFFFFF;
@@ -484,11 +480,10 @@ td{
   border-radius: 5px 5px 5px 5px;
   clear: both;
   margin-bottom: 2em;
-  padding: 0.5em 1em 1em;
+  padding: 0.5em 0 1em;
   font-size: 12px;
 }
 
-#preface-area .block > h2,
 .region-content-top .block > h2,
 #footer-area .block > h2 {
   border-bottom: 2px solid #CCCCCC;
@@ -520,48 +515,18 @@ td{
   padding: 0 1em 0.5em;
 }
 
-#preface-area .block p,
 .region-content-top .block p,
 #footer-area .block p,
 #sidebar .block p {
   margin-bottom: 1em;
 }
 
-#preface-area .block img,
 .region-content-top .block img,
 #footer-area .block img,
 #sidebar .block img {
   height: auto;
   max-width: 97.4%;
 }
-
-#preface-area {
-    background-color: #fff;
-    overflow: hidden;
-    padding: 2em 3% 0;
-}
-
-#preface-block-wrap.in1 .preface-block {
-  margin-bottom: 2.5em;
-}
-
-#preface-block-wrap.in2 .preface-block {
-  float: left;
-  width: 48.5%;
-}
-#preface-block-wrap.in2 .preface-block + .preface-block {
-  float: right;
-}
-
-#preface-block-wrap.in3 .preface-block {
-    float: left;
-    margin-right: 3%;
-    width: 31.3%;
-}
-#preface-block-wrap.in3 .preface-block + .preface-block + .preface-block {
-  margin-right: 0;
-}
-
 
 /* =Footer
 ----------------------------------------------- */
@@ -637,7 +602,6 @@ td{
 
 #footer-block-wrap a {
   color: #333333 !important;
-  font-size: 12px;
   list-style: none;
   text-decoration: none;
 }
@@ -1000,6 +964,7 @@ ol.search-results { padding-left: 0; }
 ul.menu li {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 ul.inline {
@@ -1345,21 +1310,6 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   #main #sidebar {
     float: none;
     margin: 0 3%;
-    width: auto;
-  }
-  #preface-block-wrap.in1 .preface-block {
-    float: none;
-    margin-right: 0;
-    width: auto;
-  }
-  #preface-block-wrap.in2 .preface-block {
-    float: none;
-    margin-right: 0;
-    width: auto;
-  }
-  #preface-block-wrap.in3 .preface-block {
-    float: none;
-    margin-right: 0;
     width: auto;
   }
   #footer-block-wrap.in1 .footer-block {

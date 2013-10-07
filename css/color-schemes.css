@@ -77,11 +77,6 @@ body.dark {
   border-bottom: 1px solid #222;
 }
 
-.dark #preface-area {
-  background-color: #222;
-  border-color: #333;
-}
-
 /* =Content
 ----------------------------------------------- */
 .dark #main {
@@ -91,7 +86,6 @@ body.dark {
 .dark .node h2.title a {
   color: #ccc;
 }
-.dark #preface-area .block,
 .dark .region-content-top .block,
 .dark #footer-area .block,
 .dark #sidebar .block, 
@@ -133,7 +127,6 @@ body.dark {
   text-shadow: 1px 1px #111;
 }
 
-.dark #preface-area .block > h2,
 .dark .region-content-top .block > h2,
 .dark #footer-area .block > h2,
 .dark #sidebar .block > h2 {

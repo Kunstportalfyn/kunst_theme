@@ -169,7 +169,7 @@ body {
 }
 
 .no-sidebars #primary{
-  margin: 0;
+  margin-bottom: 1em;
 }
 .no-sidebars #content{
   margin: 0 3%;

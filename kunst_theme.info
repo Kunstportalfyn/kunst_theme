@@ -10,6 +10,7 @@ stylesheets[all][] = css/responsive-menus.css
 stylesheets[all][] = style.css
 scripts[] = js/base.js
 scripts[] = js/menu.js
+scripts[] = js/selectivizr-min.js
 regions[header]         = Header
 regions[preface]        = Preface
 regions[content_top]    = Content Top

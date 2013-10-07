@@ -79,28 +79,6 @@
         <?php if ($site_slogan): ?><h2 id="site-slogan"><?php print $site_slogan; ?></h2><?php endif; ?>
       </hgroup>
     <?php endif; ?>
-    <?php if (theme_get_setting('socialicon_display', 'kunst_theme')): ?>
-        <?php 
-        $twitter_url = check_plain(theme_get_setting('twitter_url', 'kunst_theme')); 
-        $facebook_url = check_plain(theme_get_setting('facebook_url', 'kunst_theme')); 
-        ?>
-      <div class="social-profile">
-        <ul>
-          <?php if ($facebook_url): ?>
-          <li><a target="_blank" title="<?php print $site_name; ?> in Facebook" href="<?php print $facebook_url; ?>">
-          <i class="icon-facebook-sign" ></i>
-          </a>
-            </li>
-          <?php endif; ?>
-          <?php if ($twitter_url): ?>
-          <li><a target="_blank" title="<?php print $site_name; ?> in Twitter" href="<?php print $twitter_url; ?>"><i class="icon-twitter-sign" > </i></a></li>
-          <?php endif; ?>
-          <li>
-            <a target="_blank" title="<?php print $site_name; ?> in RSS" href="<?php print $front_page; ?>rss.xml"> <i class="icon-rss-sign" > </i></a>
-          </li>
-        </ul>
-      </div>
-    <?php endif; ?>
     
   </header>
 
@@ -174,10 +152,31 @@
     </div>
 
   </footer>
-        <div id="bottom" class="clearfix">
-      <div class="copyright"><?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></div>
-      <div class="credit"><?php print t('Theme by'); ?>  <a href="https://odensebib.dk" target="_blank">Odense Centralbibliotek</a></div>
-    </div>
+  <div id="bottom" class="clearfix">
+    <?php if (theme_get_setting('socialicon_display', 'kunst_theme')): ?>
+        <?php 
+        $twitter_url = check_plain(theme_get_setting('twitter_url', 'kunst_theme')); 
+        $facebook_url = check_plain(theme_get_setting('facebook_url', 'kunst_theme')); 
+        ?>
+      <div class="social-profile">
+        <ul>
+          <?php if ($facebook_url): ?>
+          <li><a target="_blank" title="<?php print $site_name; ?> in Facebook" href="<?php print $facebook_url; ?>">
+          <i class="icon-facebook-sign" ></i>
+          </a>
+            </li>
+          <?php endif; ?>
+          <?php if ($twitter_url): ?>
+          <li><a target="_blank" title="<?php print $site_name; ?> in Twitter" href="<?php print $twitter_url; ?>"><i class="icon-twitter-sign" > </i></a></li>
+          <?php endif; ?>
+          <li>
+            <a target="_blank" title="<?php print $site_name; ?> in RSS" href="<?php print $front_page; ?>rss.xml"> <i class="icon-rss-sign" > </i></a>
+          </li>
+        </ul>
+      </div>
+    <?php endif; ?>
+<div class="credit">Kunstportal Fyn er et samarbejdsprojekt mellem de fynske folkebiblioteker støttet af Kulturregion Fyn · Om Kunstportalfyn.dk · Kontakt os</div>
+  </div>
 
 </div>
 

@@ -646,16 +646,12 @@ td{
   padding:  0;
 }
 #bottom {
-  background-color: #fff;
+  background-color: #CCCCCC;
   border-top: 1px solid #ccc;
-  border-bottom: 2px solid #aaa;
   clear: both;
-  -moz-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
   color: #666;
-  font-size: 12px;
-  line-height: 2.2em;
-  padding: 2.2em 0.5em;
+  font-size: 14px;
+  line-height: 1.8em;
   text-align: center;
 }
 #bottom a {
@@ -674,16 +670,16 @@ td{
     text-align: left;
 }
 #bottom .credit { 
-  margin-right: 3%;
-  float: right;
   text-align: right;
 }
 /* Social Profile */
-.social-profile {
-  position: absolute;
-  right: 3%;
-  top: 1em;
-}
+
+  .social-profile {
+    right: auto;
+    left: 0px;
+    margin: 0;
+    width: auto;
+  }
 .social-profile ul {
   list-style: none;
 }
@@ -1405,17 +1401,6 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
     width: calc(100% - 150px);
     float: none;
   }
-  
-  #wrapper div.social-profile {
-    right: auto;
-    left: 0px;
-    margin: 0;
-    width: auto;
-  }
-  
-  #wrapper div.social-profile ul {
-    margin: 4px;
-  }
  
   #edit-submit {
     position: absolute;
@@ -1460,11 +1445,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
     line-height: 38px;
   }
   #header #site-logo {
-    padding: 5.30625em 0 2em 0;
     text-align: center;
-  }
-  #header .social-profile {
-    top: 2em !important;
   }
   #nav-slider .nav-previous,
   #nav-slider .nav-next {

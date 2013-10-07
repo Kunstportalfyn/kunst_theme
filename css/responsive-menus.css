@@ -13,6 +13,20 @@
   margin-bottom: 30px;
 }
 
+#block-menu-block-1 div.content div > ul > li:first-child > a {
+  background-color: transparent!important;
+}
+
+#block-menu-block-1 i.icon-home {
+  font-size: 14pt;
+  color: #000;
+}
+
+#block-menu-block-1 i.icon-home:hover {
+  color: #666;
+  cursor: pointer;
+}
+
 #block-menu-block-1 div > div > ul.menu li div.expandable, #rm-removed div > div > ul.menu li div.expandable {
   display: none;
   height: 12px;
@@ -128,7 +142,7 @@
     width: 18%;
     float: left;
     overflow: visible;
-    margin-right: 2%;
+    margin-right: 1.5%;
     margin-left: 0;
   }
 

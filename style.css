@@ -237,6 +237,9 @@ p {
 ul, ol {
   margin: 0 0 1em 1.5em;
 }
+.menu ul, ol {
+  margin: 0;
+}
 ul {
   list-style: disc;
 }
@@ -637,7 +640,6 @@ td{
 
 #footer-block-wrap a {
   color: #333333 !important;
-  font-size: 12px;
   list-style: none;
   text-decoration: none;
 }
@@ -1000,6 +1002,7 @@ ol.search-results { padding-left: 0; }
 ul.menu li {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 ul.inline {

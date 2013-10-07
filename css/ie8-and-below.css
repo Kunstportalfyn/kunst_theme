@@ -10,6 +10,8 @@
   width: 18%;
   float: left;
   margin-right: 2%;
+  position: relative;
+  z-index: 10000;
 }
 
 #block-menu-block-1 ul li a {
@@ -19,7 +21,10 @@
 
 #block-menu-block-1 ul li ul {
   list-style-type: none!important;
-  
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  min-width: 100%;
 }
 
 #block-menu-block-1 ul li ul li {

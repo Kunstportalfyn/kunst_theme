@@ -965,8 +965,8 @@ ol.search-results { padding-left: 0; }
     padding: 10px;
 }
 #block-menu-tree-menu-frontpage-menu a{
-    border: 1.5px solid rgba(166, 48, 124, 0.4);
     padding: 10px;
+    color: black;
 }
 .item-list ul {
   margin: 0;

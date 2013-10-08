@@ -121,10 +121,10 @@ body {
 
 /* tabroll */
 #featured .ui-tabs-nav li.ui-tabs-selected:after {
-   border-right-color: #60AE97;
+   border-right-color: #80ceb7;
 }
 #featured .ui-tabs-nav .ui-tabs-selected a {
-  background-color: #60AE97;
+  background-color: #80ceb7;
 }
 /* Right Content */
 .left-sidebar #primary {
@@ -1059,6 +1059,7 @@ ul.inline, ul.links.inline {
 /*-------------------------------------------*/
 .field-name-field-tags {
   margin: 0 0 10px 0;
+  
 }
 
 .field-name-field-tags a{
@@ -1070,6 +1071,7 @@ ul.inline, ul.links.inline {
   margin-right: 3px;
   opacity: 0.9;
   padding: 4px 6px;
+  border-radius: 5px;
 }
 
 .field-name-field-tags a:hover{
@@ -1176,6 +1178,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   margin-right: 3px;
   opacity: 0.9;
   padding: 4px 6px;
+  border-radius: 5px;
 }
 
 .field-name-field-category .field-items .field-item a:hover{

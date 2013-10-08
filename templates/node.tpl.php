@@ -86,17 +86,9 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
   
-      <?php if ($display_submitted): ?>
+       <?php if ($display_submitted): ?>
         <span class="submitted">
-          <div class="field field-name-field-category field-type-taxonomy-term-reference field-label-hidden">
-            <div class="field-items">
-              <div class="field-item even">
-                <a datatype="" property="rdfs:label skos:prefLabel" typeof="skos:Concept" href="<?php print render($content['field_category'][0]['#href']); ?>">
-                  <?php print render($content['field_category'][0]['#title']); ?></a>
-              </div>
-            </div>
-          </div>
-          <?php print ' ' . $date; ?>
+<?php print render($content['field_category']); ?><?php print ' ' . $date; ?>
         </span>
       <?php endif; ?>
 

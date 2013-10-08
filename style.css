@@ -896,7 +896,6 @@ ol.search-results { padding-left: 0; }
   padding: 4px 9px;
   border-radius: 4px;
   color: #383838;
-  text-shadow: 1px 1px #fff;
   clear: both;
   display: block;
   margin-bottom: 2px;
@@ -1158,6 +1157,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 /*-------------------------------------------*/
 .field-name-field-category {
   margin: 0 0 10px 0;
+  display: inline;
 }
 
 .field-name-field-category .field-items  .field-item a {

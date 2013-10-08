@@ -119,6 +119,13 @@ body {
   width: 27%;
 }
 
+/* tabroll */
+#featured .ui-tabs-nav li.ui-tabs-selected:after {
+   border-right-color: #60AE97;
+}
+#featured .ui-tabs-nav .ui-tabs-selected a {
+  background-color: #60AE97;
+}
 /* Right Content */
 .left-sidebar #primary {
   float: right;
@@ -893,7 +900,7 @@ ol.search-results { padding-left: 0; }
 
 .submitted{
   background: #eee;
-  padding: 4px 9px;
+  padding: 4px 0px;
   border-radius: 4px;
   color: #383838;
   clear: both;

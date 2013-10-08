@@ -961,12 +961,17 @@ ol.search-results { padding-left: 0; }
 /* Frontpage menu */
 
 #block-menu-tree-menu-frontpage-menu {
-    border: 1.5px solid rgba(166, 48, 124, 0.4);
+    border: 1.5px solid rgba(166, 48, 124, 0.5);
     padding: 10px;
 }
 #block-menu-tree-menu-frontpage-menu a{
     padding: 10px;
     color: black;
+}
+.block.block-menu-tree .icon-play {
+    color: #A42978;
+    float: left;
+    margin-top: 5px;
 }
 .item-list ul {
   margin: 0;

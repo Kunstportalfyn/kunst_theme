@@ -957,6 +957,17 @@ ol.search-results { padding-left: 0; }
 /*-------------------------------------------*
 /* Menus and item lists 
 /*-------------------------------------------*/
+
+/* Frontpage menu */
+
+#block-menu-tree-menu-frontpage-menu {
+    border: 1.5px solid rgba(166, 48, 124, 0.4);
+    padding: 10px;
+}
+#block-menu-tree-menu-frontpage-menu a{
+    border: 1.5px solid rgba(166, 48, 124, 0.4);
+    padding: 10px;
+}
 .item-list ul {
   margin: 0;
   padding: 0 0 0 1.5385em;

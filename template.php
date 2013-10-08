@@ -1,4 +1,33 @@
 <?php
+/* for awsome fonts on menus */
+function kunst_theme_menu_link(array $variables) {
+  $element = $variables['element'];
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+
+  // Class attributes by menu_attributes
+  if (isset($element['#localized_options']['attributes']['class'])) {
+    $array_class = $element['#localized_options']['attributes']['class'];
+    foreach ($array_class as $i => $class) {
+      if (substr($class, 0, 5) == 'icon-') {
+        // Don't put the class on the <a> tag!
+        unset($element['#localized_options']['attributes']['class'][$i]);
+        // It should go on a <i> tag (FontAwesome)!
+        $icon = '<i class="' . $class . '"></i>';
+      }
+    }
+  }
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  if (!empty($icon)) {
+    // Insert the icons (<i> tags) into the <a> tag.
+    $output = substr_replace($output, $icon, -4, 0);
+  }
+
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
 /**
  * Implements hook_html_head_alter().
  * This will overwrite the default meta character type tag with HTML5 version.

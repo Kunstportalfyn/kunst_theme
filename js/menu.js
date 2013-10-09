@@ -26,11 +26,6 @@
   
   function adjustMenu(e) {
     if($(window).width() > 767) {
-      var $first = $("#block-menu-block-1 div.content > div > ul.menu > li:first-child");
-      $first.width(20);
-      $first.find("a").html('<i class="icon-home"> </i>');
-      $first.css("background-color", "transparent");
-      $first.find("a").css("background-color", "transparent");
       $("#block-menu-block-1 ul.menu > li").mouseenter(function(e) {
         $(this).find("ul li").stop(true, true).slideDown(100);
       });

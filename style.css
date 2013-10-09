@@ -447,13 +447,16 @@ td{
 .node h2.title, h1.page-title {
   clear: both;
   color: #222222;
-  font-size: 26px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.5em;
   padding-bottom: 0.3em;
   padding-top: 15px;
 }
-
+h2.pane-title{
+  font-size: 26px;
+  font-weight: bold;
+}
 #main #content .node-teaser {
   padding-bottom:30px;
   border-bottom:1px solid #DDDDDD;
@@ -1194,14 +1197,12 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   opacity: 0.9;
   padding: 4px 6px;
   border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .field-name-field-category .field-items .field-item a:hover{
   opacity: 1;
-}
-
-.field-name-field-category .field-items .field-item {
-  margin: 0 1em 0 0;
 }
 
 .field-name-field-category div {

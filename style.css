@@ -495,11 +495,12 @@ h2.pane-title{
 .region-content-top .block > h2,
 #footer-area .block > h2 {
   border-bottom: 2px solid #CCCCCC;
-  color: #222222;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.1em;
   padding: 0 1em 0.5em;
+  background: #1A3849;
 }
 
 #sidebar .block {

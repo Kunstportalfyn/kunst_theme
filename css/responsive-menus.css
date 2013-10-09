@@ -146,9 +146,11 @@
     overflow: visible;
     margin-right: 1.5%;
     margin-left: 0;
+    font-size: 14px;
   }
   #block-menu-block-1 div.content > div > ul.menu > li:last-child {
     margin-right: 0%;
+    font-size: 14px;
   }  
 
   #block-menu-block-1 div.content > div > ul.menu > li > ul {

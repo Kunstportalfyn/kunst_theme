@@ -1,4 +1,13 @@
 <?php
+function kunst_theme_preprocess_user_profile_item(&$variables) {
+  debug($variables);
+  $variables['title'] = $variables['element']['#title'];
+  $variables['value'] = $variables['element']['#markup'];
+  $variables['attributes'] = '';
+  if (isset($variables['element']['#attributes'])) {
+    $variables['attributes'] = drupal_attributes($variables['element']['#attributes']);
+  }
+}
 /* for awsome fonts on menus */
 function kunst_theme_menu_link(array $variables) {
   $element = $variables['element'];

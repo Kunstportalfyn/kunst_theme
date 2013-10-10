@@ -13,10 +13,6 @@
   margin-bottom: 30px;
 }
 
-#block-menu-block-1 div.content div > ul > li:first-child > a {
-  background-color: transparent!important;
-}
-
 #block-menu-block-1 i.icon-home {
   font-size: 14pt;
   color: #000;

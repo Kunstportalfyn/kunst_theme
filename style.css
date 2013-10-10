@@ -25,6 +25,11 @@
    .four { display:table-header-group; } 
    .one { display:table-footer-group; } 
 }
+/* kultunaut kalender */
+#nautcontent h1{
+  display: none;
+}
+
 /* =Reset
 -------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe,
@@ -1374,6 +1379,9 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 }
   
 @media screen and (max-width: 767px) {
+  #nautcontent table{
+    width: 70%;
+  }
   .region-header #block-search-form .form-item-search-block-form .form-text {
     position: absolute;
     right: 110px;

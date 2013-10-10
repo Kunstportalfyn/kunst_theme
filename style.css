@@ -563,12 +563,12 @@ h2.pane-title{
 }
 
 #bottom-block-wrap.in3 .bottom-block {
+    border-right: 1px solid #1A3849;
     min-height: 400px;
     float: left;
     width: 33.25%;
 }
 #bottom-block-wrap.in3 .bottom-block .content{
-  border-right: 1px solid black;
   margin-left: 15px;
 }
 #bottom-block-wrap.in3 .bottom-block + .bottom-block + .bottom-block {

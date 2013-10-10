@@ -488,7 +488,6 @@ h2.pane-title{
   background-color: #FFFFFF;
   clear: both;
   margin-bottom: 2em;
-  padding: 0.5em 0 1em;
   font-size: 12px;
 }
 
@@ -544,10 +543,13 @@ h2.pane-title{
   clear: both;
 }
 #footer-area {
-    background-color: #fff;
+    background-color: #CCCCCC;
     overflow: hidden;
 }
-
+#bottom-block-wrap {
+    background: none repeat scroll 0 0 white;
+    margin-bottom: 20px;
+}
 #bottom-block-wrap.in1 .bottom-block {
   margin-bottom: 2.5em;
 }
@@ -561,8 +563,9 @@ h2.pane-title{
 }
 
 #bottom-block-wrap.in3 .bottom-block {
+    min-height: 400px;
     float: left;
-    width: 33.3%;
+    width: 33.25%;
 }
 #bottom-block-wrap.in3 .bottom-block .content{
   border-right: 1px solid black;
@@ -570,6 +573,7 @@ h2.pane-title{
 }
 #bottom-block-wrap.in3 .bottom-block + .bottom-block + .bottom-block {
   margin-right: 0;
+  border-right: none;
 }
 #bottom-block-wrap.in3 .bottom-block + .bottom-block + .bottom-block .content{
   border-right: 0px;

@@ -66,6 +66,9 @@ body {
   background: #fff;
   line-height: 1;
 }
+img {
+  max-width: 100%
+}
 ol, ul {
   list-style: none;
 }
@@ -981,15 +984,15 @@ ol.search-results { padding-left: 0; }
 
 /* Menu tree*/
 
-.block-menu-tree {
+.block-menu-tree, .pane-menu-tree {
     border: 1.5px solid rgba(166, 48, 124, 0.5);
     padding: 10px;
 }
-.block-menu-tree a{
+.block-menu-tree a, .pane-menu-tree a{
     padding: 10px;
     color: black;
 }
-.block.block-menu-tree .icon-play {
+.block.block-menu-tree .icon-play, .pane-menu-tree .icon-play{
     color: #A42978;
     float: left;
     margin-top: 5px;
@@ -1381,11 +1384,17 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
     float: none;
     margin-right: 0;
     width: auto;
+    border-right: none;
   }
   
 }
   
 @media screen and (max-width: 767px) {
+  
+.region-footer-first, .region-footer-second, .region-footer-third{
+  border-bottom: 1px solid white;
+  border-right: none;
+}
   #nautcontent table{
     width: 70%;
   }

@@ -24,7 +24,8 @@
   cursor: pointer;
 }
 
-#block-menu-block-1 div > div > ul.menu li div.expandable, #rm-removed div > div > ul.menu li div.expandable {
+#block-menu-block-1 ul.menu li div.expandable, 
+#rm-removed ul.menu li div.expandable {
   visibility: hidden;
   height: 12px;
   width: 20px;
@@ -33,7 +34,8 @@
   margin-top: -7px;
 }
 
-#block-menu-block-1 div > div > ul.menu li.expanded div.expandable, #rm-removed div > div > ul.menu li.expanded div.expandable {
+#block-menu-block-1 div > div > ul.menu li.expanded > a > div.expandable, 
+#rm-removed div > div > ul.menu li.expanded > div.expandable {
   visibility: visible;
 }
 
@@ -41,6 +43,8 @@
   background-color: #60ae97;
   position: relative;
   z-index: 900;
+  white-space: nowrap;
+  overflow: visible;
 }
 
 #block-menu-block-1 ul.menu li a {
@@ -145,6 +149,7 @@
     margin-left: 0;
     font-size: 14px;
   }
+  
   #block-menu-block-1 div.content > div > ul.menu > li:last-child {
     margin-right: 0%;
     font-size: 14px;
@@ -173,7 +178,9 @@
     margin: 0;
   }
   
-  #block-menu-block-1 li ul li{
+  #block-menu-block-1 ul li ul li,
+  #block-menu-block-1 ul li ul li ul li
+  {
     width: auto;
     float: none;
     height: 0px;

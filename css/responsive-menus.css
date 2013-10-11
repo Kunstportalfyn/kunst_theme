@@ -40,7 +40,7 @@
 #block-menu-block-1 ul.menu > li {
   background-color: #60ae97;
   position: relative;
-  z-index: 10000;
+  z-index: 900;
 }
 
 #block-menu-block-1 ul.menu li a {

@@ -11,6 +11,7 @@
   clear: both;
   margin: 0;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 #block-menu-block-1 i.icon-home {
@@ -29,7 +30,7 @@
   width: 20px;
   float: left;
   font-size: 20px;
-  margin-top: -8px;
+  margin-top: -7px;
 }
 
 #block-menu-block-1 div > div > ul.menu li.expanded div.expandable, #rm-removed div > div > ul.menu li.expanded div.expandable {

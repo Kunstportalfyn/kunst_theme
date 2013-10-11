@@ -30,6 +30,13 @@
   display: none;
 }
 
+/*rss */
+.rssblock-itemlist .blocklist-item {
+    margin-bottom: 0px;
+}
+div.rss-image a {
+    float: none;
+}
 /* =Reset
 -------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe,
@@ -544,7 +551,7 @@ h2.pane-title{
 ----------------------------------------------- */
 
 #footer-bottom {
-  border-top: 1px solid #ccc;
+  background: none repeat scroll 0 0 #CCCCCC;
   clear: both;
 }
 #footer-area {
@@ -553,7 +560,6 @@ h2.pane-title{
 }
 #bottom-block-wrap {
     background: none repeat scroll 0 0 white;
-    margin-bottom: 20px;
 }
 #bottom-block-wrap.in1 .bottom-block {
   margin-bottom: 2.5em;
@@ -569,7 +575,7 @@ h2.pane-title{
 
 #bottom-block-wrap.in3 .bottom-block {
     border-right: 1px solid #1A3849;
-    min-height: 400px;
+    min-height: 340px;
     float: left;
     width: 33.25%;
 }
@@ -606,6 +612,7 @@ h2.pane-title{
 }
 #footer-block-wrap{
   background: #bdbcbc;
+  margin-top: 20px;
 }
 .region-footer-first, .region-footer-second, .region-footer-third{
   border-right: 1px solid white;
@@ -972,13 +979,13 @@ ol.search-results { padding-left: 0; }
 /* Menus and item lists 
 /*-------------------------------------------*/
 
-/* Frontpage menu */
+/* Menu tree*/
 
-#block-menu-tree-menu-frontpage-menu {
+.block-menu-tree {
     border: 1.5px solid rgba(166, 48, 124, 0.5);
     padding: 10px;
 }
-#block-menu-tree-menu-frontpage-menu a{
+.block-menu-tree a{
     padding: 10px;
     color: black;
 }

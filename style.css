@@ -1114,7 +1114,7 @@ ul.inline, ul.links.inline {
 }
 
 .field-name-field-tags a:hover{
-  opacity: 1;
+  background-color: #D7D5D3;
 }
 
 .field-name-field-tags .field-item {

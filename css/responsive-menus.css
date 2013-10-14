@@ -131,12 +131,11 @@
     overflow: visible;
     margin-right: 1.5%;
     margin-left: 0;
-    font-size: 14px;
+    font-size: 100%;
   }
   
   #block-menu-block-1 div.content > div > ul.menu > li:last-child {
     margin-right: 0%;
-    font-size: 14px;
   }  
 
   #block-menu-block-1 div.content > div > ul.menu > li > ul {
@@ -153,7 +152,7 @@
   }
   
   #block-menu-block-1 div.content > div > ul.menu > li > ul > li > ul > li > a {
-    text-indent: 14px;
+    text-indent: -20px;
   }
   
   #block-menu-block-1 div.content > div > ul.menu > li > ul > li > ul > li > a > i {

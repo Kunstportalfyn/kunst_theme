@@ -209,7 +209,7 @@ body {
 }
 
 a {
-  color: #1982d1;
+  color: #A53D78;
   text-decoration: none;
 }
 a:focus,
@@ -934,11 +934,9 @@ footer .links.inline{
   display: inline-table;
 }
 .links li a {
-  background-color: #A42978;
-  color: #fff;
+  color: #A42978;
   padding: 4px 5px;
   font-weight: normal;
-  border-radius: 5px;
 }
 
 .links li a:hover {

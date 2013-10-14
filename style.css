@@ -931,7 +931,7 @@ ol.search-results { padding-left: 0; }
 }
 
 footer .links.inline{
-  display: inline-table;
+  display: table;
 }
 .links li a {
   color: #A42978;

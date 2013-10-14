@@ -156,6 +156,10 @@
     text-indent: 14px;
   }
   
+  #block-menu-block-1 div.content > div > ul.menu > li > ul > li > ul > li > a > i {
+    display: none;
+  }
+  
   #block-menu-block-1 ul.menu li {
     list-style-image: none;
     list-style-type: none;

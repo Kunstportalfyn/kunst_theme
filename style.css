@@ -922,7 +922,6 @@ ol.search-results { padding-left: 0; }
 .search-results .search-snippet-info { padding-left: 0; }
 
 .submitted{
-  background: #eee;
   padding: 4px 0px;
   border-radius: 4px;
   color: #383838;
@@ -931,18 +930,19 @@ ol.search-results { padding-left: 0; }
   margin-bottom: 2px;
 }
 
+footer .links.inline{
+  display: inline-table;
+}
 .links li a {
-  background-color: #E7E5E3;
-  color: #100100;
+  background-color: #A42978;
+  color: #fff;
   padding: 4px 5px;
-  border-radius: 4px;
-  text-shadow: 1px 1px #fff;
   font-weight: normal;
+  border-radius: 5px;
 }
 
 .links li a:hover {
   background-color: #D7D5D3;
-  color: #100101;
 }
 
 
@@ -1223,7 +1223,7 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 }
 
 .field-name-field-category .field-items .field-item a:hover{
-  opacity: 1;
+  background-color: #D7D5D3;
 }
 
 .field-name-field-category div {

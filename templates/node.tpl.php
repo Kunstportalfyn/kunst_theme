@@ -85,11 +85,11 @@
       <h2 class="title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
-  
+        <div class="submitted" >
        <?php if ($display_submitted): ?>
           <?php print render($content['field_category']); ?><?php print ' ' . $date . ' ' ; ?><?php print t('Posted by') . ' ' . $name; ?>
       <?php endif; ?>
-
+        </div>
     <?php if (!$page): ?>
       </header>
   <?php endif; ?>

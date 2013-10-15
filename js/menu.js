@@ -45,6 +45,13 @@
           window.$mainMenu[itemId] = false;
         }
       });
+      $("#block-menu-block-1 > div > div > ul.menu > li.expanded").mouseleave(function(e) {
+        var item = $(this).find("[class*='menu-mlid-']").attr("class");
+        var itemId = getMenuItemClass(item);
+        $(this).find("> ul > li").stop(true, true).slideUp(100);
+        $(this).find("> a > div > i").attr("class", "icon-caret-right");
+        window.$mainMenu[itemId] = false;
+      });
     }
     else {
       // Mobile

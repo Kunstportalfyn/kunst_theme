@@ -5,6 +5,8 @@
 
 (function($) {
   $(document).ready(function() {
+    window.$mainMenu = new Array();
+    
     addExpandable();
     adjustMenu();
   });
@@ -19,20 +21,29 @@
     if($aArr.length === 0) $aArr = $("#rm-removed ul.menu > li");
     $aArr.each(function(i, a){
       $a = $(a).find(">a");
-      console.log($a.html());
+      //console.log($a.html());
       $a.html(div + $a.html());
     });
   }
   
   function adjustMenu(e) {
     if($(window).width() > 767) {
-      $("#block-menu-block-1 ul.menu > li").mouseenter(function(e) {
-        $(this).find("> ul > li").stop(true, true).slideDown(100);
-        $(this).find("> a > div > i").attr("class", "icon-caret-down");
-      });
-      $("#block-menu-block-1 ul.menu > li").mouseleave(function(e) {
-        $(this).find("ul li").stop(true, true).slideUp(100);
-        $(this).find("> a > div > i").attr("class", "icon-caret-right");
+      $("#block-menu-block-1 ul.menu > li.expanded > a").click(function(e) {
+        console.log("Triggered on: click-> " + $(this).parent().attr("class"));
+        var item = $(this).parent().find("[class*='menu-mlid-']").attr("class");
+        var itemId = getMenuItemClass(item);
+        e.preventDefault();
+        e.stopPropagation();
+        if(window.$mainMenu[itemId] !== true) {
+          $(this).parent().find("> ul > li").stop(true, true).slideDown(100);
+          $(this).find("> div > i").attr("class", "icon-caret-down");
+          window.$mainMenu[itemId] = true;
+        }
+        else {
+          $(this).parent().find("> ul > li").stop(true, true).slideUp(100);
+          $(this).find("> div > i").attr("class", "icon-caret-right");
+          window.$mainMenu[itemId] = false;
+        }
       });
     }
     else {
@@ -40,5 +51,13 @@
       $("#block-menu-block-1 ul.menu > li").unbind();
       $("#rm-removed li").attr("style","");
     }
+  }
+  
+  function getMenuItemClass(item) {
+    var sItem = item.split(" ");
+    for(i = 0; i < sItem.length; i++) {
+      if(sItem[i].substr(0,10) == "menu-mlid-") return sItem[i];
+    }
+    return false;
   }
 })(jQuery);

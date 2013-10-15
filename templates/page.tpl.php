@@ -122,6 +122,7 @@
 <?php endif; ?>  
        
 </div>
+  <div id="shadow-bottom">
     <div id="footer-bottom" class="clearfix">
            <div class="clearfix">
       <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']): ?>
@@ -166,10 +167,10 @@
           </li>
         </ul>
       </div>
-    <?php endif; ?>
-<div class="credit">Kunstportal Fyn er et samarbejdsprojekt mellem de fynske folkebiblioteker støttet af Kulturregion Fyn · Om Kunstportalfyn.dk · Kontakt os</div>
+<?php endif; ?>
+      <div class="credit">Kunstportal Fyn er et samarbejdsprojekt mellem de fynske folkebiblioteker støttet af Kulturregion Fyn · Om Kunstportalfyn.dk · Kontakt os</div>
+    </div>
   </div>
-
 </div>
 
 

@@ -631,11 +631,12 @@ h2.pane-title{
   background: #bdbcbc;
   margin-top: 20px;
 }
-.region-footer-first, .region-footer-second, .region-footer-third{
-  border-right: 1px solid white;
-  min-height: 150px;
+.region-footer-first, .region-footer-second, .region-footer-third {
+    border-right: 1px solid white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    min-height: 150px;
 }
-
 #footer-block-wraps h2 {
   color: #333333 !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -655,13 +656,13 @@ h2.pane-title{
   padding:  0;
 }
 #bottom {
-  background-color: #CCCCCC;
-  border-top: 1px solid #ccc;
-  clear: both;
-  color: #666;
-  font-size: 14px;
-  line-height: 1.8em;
-  text-align: center;
+    background-color: #B3B3B3;
+    border-top: 1px solid #FFFFFF;
+    clear: both;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    padding-top: 5px;
+    text-align: center;
 }
 #bottom a {
   color: #555;

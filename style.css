@@ -61,6 +61,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   outline: 0;
   padding: 0;
   vertical-align: baseline;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* remember to define focus styles! */
@@ -553,11 +554,9 @@ h2.pane-title {
  ----------------------------------------------- */
 
 #footer-bottom {
-  background: none repeat scroll 0 0 #CCCCCC;
   clear: both;
 }
 #footer-area {
-  background-color: #CCCCCC;
   overflow: hidden;
 }
 #bottom-block-wrap {
@@ -613,7 +612,6 @@ h2.pane-title {
   margin-right: 0;
 }
 #footer-block-wrap {
-  background: #bdbcbc;
   margin-top: 20px;
 }
 .region-footer-first, .region-footer-second, .region-footer-third {
@@ -624,7 +622,6 @@ h2.pane-title {
 }
 #footer-block-wraps h2 {
   color: #333333 !important;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13.65px;
   font-weight: normal;
   margin: 0;
@@ -641,7 +638,6 @@ h2.pane-title {
   padding: 0;
 }
 #bottom {
-  background-color: #B3B3B3;
   border-top: 1px solid #FFFFFF;
   clear: both;
   font-size: 0.9em;
@@ -1564,12 +1560,11 @@ ul.inline, ul.links.inline {
 }
 
 #footer-block-wrap {
-
-  background-color: rgba(153, 153, 153, 0.5) !important;
+  background-color: rgba(204, 204, 204, 0.5);
 }
 
 #footer-block-wrap .footer-block {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 /* =Responsive Structure

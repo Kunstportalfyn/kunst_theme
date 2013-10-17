@@ -157,7 +157,7 @@
   }
   
   #block-menu-block-1 div.content > div > ul.menu > li > ul > li > ul > li > a {
-    text-indent: -20px;
+    font-weight: normal;
   }
   
   #block-menu-block-1 div.content > div > ul.menu > li > ul > li > a > i,

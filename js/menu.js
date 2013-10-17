@@ -26,8 +26,10 @@
   }
   
   function adjustMenu(e) {
+    $("#block-menu-block-1 ul li ul.menu > li.expanded > a").unbind();
+    $("#block-menu-block-1 > div > div > ul.menu > li.expanded").unbind();
     if($(window).width() > 767) {
-      $("#block-menu-block-1 > div > div > ul.menu > li").mouseenter(function(e) {
+      $("#block-menu-block-1 > div > div > ul.menu > li.expanded").mouseenter(function(e) {
         console.log("Triggered on: mouseenter-> " + $(this).attr("class"));
         $(this).find("> ul > li").stop(true, true).slideDown(100);
         $(this).find("> a > div > i").attr("class", "icon-caret-down");
@@ -59,7 +61,7 @@
     }
     else {
       // Mobile
-      $("#block-menu-block-1 ul.menu > li").unbind();
+      // $("#block-menu-block-1 ul.menu > li").unbind();
       $("#rm-removed li").attr("style","");
     }
   }

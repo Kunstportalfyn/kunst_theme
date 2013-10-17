@@ -110,6 +110,11 @@
     margin-left: 10px;
   }
   
+  #rm-removed div.content > div > ul.menu > li > ul > li > a > i,
+  #rm-removed div.content > div > ul.menu > li > ul > li > ul > li > a > i {
+    display: none;
+  }
+  
   #rm-removed ul.menu li {
     list-style-image: none;
     list-style-type: none;

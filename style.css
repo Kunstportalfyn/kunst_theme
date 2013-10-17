@@ -611,9 +611,6 @@ h2.pane-title {
 #footer-block-wrap.in3 .footer-block + .footer-block + .footer-block + .footer-block {
   margin-right: 0;
 }
-#footer-block-wrap {
-  margin-top: 20px;
-}
 .region-footer-first, .region-footer-second, .region-footer-third {
   border-right: 1px solid white;
   margin-bottom: 10px;
@@ -1557,6 +1554,7 @@ ul.inline, ul.links.inline {
 
 #footer-bottom {
   background-color: transparent;
+  margin-top: 20px;
 }
 
 #footer-block-wrap {

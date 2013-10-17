@@ -6,7 +6,6 @@
 (function($) {
   $(document).ready(function() {
     window.$mainMenu = new Array();
-    
     addExpandable();
     adjustMenu();
   });
@@ -16,7 +15,7 @@
   });
   
   function addExpandable() {
-    var div = '<div class="expandable"><i class="icon-caret-right"> </i></div>';
+    var div = '<div class="expandable-indicator"><i class="icon-caret-right"> </i></div>';
     var $aArr = $("#block-menu-block-1 ul.menu > li");
     if($aArr.length === 0) $aArr = $("#rm-removed ul.menu > li");
     $aArr.each(function(i, a){
@@ -28,7 +27,12 @@
   
   function adjustMenu(e) {
     if($(window).width() > 767) {
-      $("#block-menu-block-1 ul.menu > li.expanded > a").click(function(e) {
+      $("#block-menu-block-1 > div > div > ul.menu > li").mouseenter(function(e) {
+        console.log("Triggered on: mouseenter-> " + $(this).attr("class"));
+        $(this).find("> ul > li").stop(true, true).slideDown(100);
+        $(this).find("> a > div > i").attr("class", "icon-caret-down");
+      });
+      $("#block-menu-block-1 ul li ul.menu > li.expanded > a").click(function(e) {
         console.log("Triggered on: click-> " + $(this).parent().attr("class"));
         var item = $(this).parent().find("[class*='menu-mlid-']").attr("class");
         var itemId = getMenuItemClass(item);

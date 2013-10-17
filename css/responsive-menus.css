@@ -14,8 +14,8 @@
   font-weight: bold;
 }
 
-#block-menu-block-1 ul.menu li div.expandable, 
-#rm-removed ul.menu li div.expandable {
+#block-menu-block-1 ul.menu li div.expandable-indicator, 
+#rm-removed ul.menu li div.expandable-indicator {
   visibility: hidden;
   height: 12px;
   width: 20px;
@@ -24,8 +24,8 @@
   margin-top: -7px;
 }
 
-#block-menu-block-1 div > div > ul.menu li.expanded > a > div.expandable, 
-#rm-removed div > div > ul.menu li.expanded > div.expandable {
+#block-menu-block-1 div > div > ul.menu li.expanded > a > div.expandable-indicator, 
+#rm-removed div > div > ul.menu li.expanded > div.expandable-indicator {
   visibility: visible;
 }
 
@@ -155,6 +155,7 @@
     text-indent: -20px;
   }
   
+  #block-menu-block-1 div.content > div > ul.menu > li > ul > li > a > i,
   #block-menu-block-1 div.content > div > ul.menu > li > ul > li > ul > li > a > i {
     display: none;
   }

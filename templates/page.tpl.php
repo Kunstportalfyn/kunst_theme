@@ -100,28 +100,31 @@
         </section> <!-- /#main -->
       </div>
 
-    </div>
-  
-<?php if ($is_front): ?>
-  <footer id="footer-bottom">
-    <div id="footer-area" class="clearfix">
-      <?php if ($page['bottom_first'] || $page['bottom_second'] || $page['bottom_third']): ?>
-        <div id="bottom-block-wrap" class="clearfix in<?php print (bool) $page['bottom_first'] + (bool) $page['bottom_second'] + (bool) $page['bottom_third']; ?>">
-          <?php if($page['bottom_first']): ?><div class="bottom-block">
-            <?php print render ($page['bottom_first']); ?>
-          </div><?php endif; ?>
-          <?php if($page['bottom_second']): ?><div class="bottom-block">
-            <?php print render ($page['bottom_second']); ?>
-          </div><?php endif; ?>
-          <?php if($page['bottom_third']): ?><div class="bottom-block">
-            <?php print render ($page['bottom_third']); ?>
-          </div><?php endif; ?>
-        </div>
-      <?php endif; ?>
-    </div>
-<?php endif; ?>  
-       
-</div>
+    </div>       
+  </div>
+
+  <?php if ($is_front): ?>
+    <div id="shadow-bottom">
+      <footer id="footer-bottom">
+        <div id="footer-area" class="clearfix">
+          <?php if ($page['bottom_first'] || $page['bottom_second'] || $page['bottom_third']): ?>
+            <div id="bottom-block-wrap" class="clearfix in<?php print (bool) $page['bottom_first'] + (bool) $page['bottom_second'] + (bool) $page['bottom_third']; ?>">
+              <?php if ($page['bottom_first']): ?><div class="bottom-block">
+                  <?php print render($page['bottom_first']); ?>
+                </div><?php endif; ?>
+              <?php if ($page['bottom_second']): ?><div class="bottom-block">
+                  <?php print render($page['bottom_second']); ?>
+                </div><?php endif; ?>
+              <?php if ($page['bottom_third']): ?><div class="bottom-block">
+                  <?php print render($page['bottom_third']); ?>
+                </div><?php endif; ?>
+            </div>
+          <?php endif; ?>
+        </div></div>
+  <?php endif; ?>
+
+
+
   <div id="shadow-bottom">
     <div id="footer-bottom" class="clearfix">
            <div class="clearfix">

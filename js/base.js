@@ -58,9 +58,18 @@
       }
     }
   }
+  
+  function galleriaFix() {
+    console.log("galleriaFix start");
+    console.log($(".galleria-image-nav-left").length);
+    $(".galleria-image-nav-right").html('<i class="icon-chevron-right"> </i>');
+    $(".galleria-image-nav-left").html('<i class="icon-chevron-left"> </i>');
+    console.log($(".galleria-image-nav-left").html());
+  }
 
   $().ready(function(){
     loginFormWrap();
+    galleriaFix();
     // check if user is logged in
     if($("#block-user-login").length) {
       showLoginButton();

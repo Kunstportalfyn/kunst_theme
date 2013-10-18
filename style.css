@@ -1386,7 +1386,7 @@ ul.inline, ul.links.inline {
 }
 
 .profile .field-items p {
- 
+  margin: 0;
 }
 
 .profile .field-item {

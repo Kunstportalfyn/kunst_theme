@@ -46,6 +46,9 @@
 .rssblock-itemlist .blocklist-item {
   margin-bottom: 0px;
 }
+.rssblock-itemlist .blocklist-item .rss-link a {
+  font-weight: bold;
+}
 div.rss-image a {
   float: none;
 }
@@ -1990,4 +1993,12 @@ ul.inline, ul.links.inline {
 
 body.cke_editable {
   background: #fff;
+}
+
+#block-user-new .item-list {
+  margin: 10px 10px 0px 0px;
+}
+
+#block-comment-recent .item-list {
+  margin: 10px 10px 0px 0px;
 }

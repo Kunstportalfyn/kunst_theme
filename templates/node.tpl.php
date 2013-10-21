@@ -87,7 +87,7 @@
       <?php print render($title_suffix); ?>
         <div class="submitted" >
        <?php if ($display_submitted): ?>
-          <?php print render($content['field_category']); ?><?php print ' ' . $date . ' ' ; ?><?php print t('Posted by') . ' ' . $name; ?>
+         <?php print render($content['field_category']); ?><?php print ' ' . format_date(time(), 'custom', 'l j F Y') . ' '; ?><?php print t('Posted by') . ' ' . $name; ?>
       <?php endif; ?>
         </div>
     <?php if (!$page): ?>

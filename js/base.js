@@ -66,10 +66,22 @@
     $(".galleria-image-nav-left").html('<i class="icon-chevron-left"> </i>');
     console.log($(".galleria-image-nav-left").html());
   }
+  
+  function rssFix() {
+    $.each( $(".rssblock-itemlist .blocklist-item"), function(index, value) {
+      if($(value).find(".rss-description").html()) {
+        $tmp = $(value).find(".rss-link");
+        $tmp.clone().appendTo($(value).find(".rss-description a img").parent());
+        $tmp.remove();
+      }
+    });
+    
+  }
 
   $().ready(function(){
     loginFormWrap();
     galleriaFix();
+    rssFix();
     // check if user is logged in
     if($("#block-user-login").length) {
       showLoginButton();

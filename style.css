@@ -648,7 +648,7 @@ h2.pane-title {
 }
 #bottom-block-wrap.in3 .bottom-block + .bottom-block + .bottom-block {
   margin-right: 0;
-  border-right: none;
+  border-right: 0;
 }
 #bottom-block-wrap.in3 .bottom-block + .bottom-block + .bottom-block .content {
   border-right: 0px;
@@ -698,12 +698,13 @@ h2.pane-title {
   padding: 0;
 }
 #bottom {
-  border-top: 1px solid #FFFFFF;
+  /*border-top: 1px solid #FFFFFF;*/
   clear: both;
   font-size: 0.9em;
   line-height: 1.8em;
   padding-top: 5px;
   text-align: center;
+  margin-top: 4px;
 }
 #bottom a {
   color: #555;
@@ -1218,8 +1219,8 @@ footer .links.inline {
 }
 
 /*-------------------------------------------*
- /* Fix CKEditor style
- /*-------------------------------------------*/
+/* Fix CKEditor style
+/*-------------------------------------------*/
 #content table.cke_editor {
   background: transparent;
   border: 0;
@@ -1231,8 +1232,8 @@ footer .links.inline {
 }
 
 /*-------------------------------------------*
- /* Poll, Buttons, Form
- /*-------------------------------------------*/
+/* Poll, Buttons, Form
+/*-------------------------------------------*/
 .poll .vote-form .choices .title {
   font-size: 14px;
   font-weight: normal;
@@ -1249,8 +1250,8 @@ footer .links.inline {
 }
 
 /*-------------------------------------------*
- /* Menus and item lists
- /*-------------------------------------------*/
+/* Menus and item lists
+/*-------------------------------------------*/
 
 /* Menu tree*/
 
@@ -1293,8 +1294,8 @@ ul.inline li {
 }
 
 /*-------------------------------------------*
- /* Admin Tabs
- /*-------------------------------------------*/
+/* Admin Tabs
+/*-------------------------------------------*/
 .tabs-wrapper {
   border-bottom: 1px solid #b7b7b7;
   margin: 0 0 5px 0;
@@ -1365,8 +1366,8 @@ ul.inline, ul.links.inline {
 }
 
 /*-------------------------------------------*
- /* Tabs and Tags
- /*-------------------------------------------*/
+/* Tabs and Tags
+/*-------------------------------------------*/
 .field-name-field-tags {
   margin: 0 0 10px 0;
 }
@@ -1403,8 +1404,8 @@ ul.inline, ul.links.inline {
 }
 
 /*-------------------------------------------*
- /* Profile
- /*-------------------------------------------*/
+/* Profile
+/*-------------------------------------------*/
 .profile {
   margin: 1.5385em 0;
 }
@@ -1560,8 +1561,8 @@ ul.inline, ul.links.inline {
 }
 
 /*-------------------------------------------*
- /* Navigation
- /*-------------------------------------------*/
+/* Navigation
+/*-------------------------------------------*/
 .item-list .pager {
 }
 
@@ -1572,8 +1573,8 @@ ul.inline, ul.links.inline {
   text-shadow: 1px 1px #fff;
 }
 /*-------------------------------------------*
- /* Tabs and Tags
- /*-------------------------------------------*/
+/* Tabs and Tags
+/*-------------------------------------------*/
 .field-name-field-category {
   margin: 0 0 10px 0;
   display: inline;
@@ -1602,8 +1603,8 @@ ul.inline, ul.links.inline {
 }
 
 /*-------------------------------------------*
- /* Forum
- /*-------------------------------------------*/
+/* Forum
+/*-------------------------------------------*/
 .field-name-taxonomy-forums div {
   display: inline;
   margin-top: 4px;

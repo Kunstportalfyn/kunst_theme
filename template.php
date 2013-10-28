@@ -61,6 +61,14 @@ function kunst_theme_preprocess_html(&$vars) {
     $vars['classes_array'][] = $classes[$i];
   }
 }
+/**
+ * Implements hook_menu_alter().
+ *
+ * We want to change the menu-items titles on the login form.
+ */
+function kunst_theme_menu_alter(&$items) {
+  $items['search/node']['title'] = 'Hjemmesiden';
+}
 
 /**
  * Override or insert variables into the page template.

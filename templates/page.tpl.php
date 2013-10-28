@@ -166,5 +166,8 @@
     </div>
     <?php endif; ?>
     <div class="credit">Kunstportal Fyn er et samarbejdsprojekt mellem de fynske folkebiblioteker støttet af Kulturregion Fyn · Om Kunstportalfyn.dk · Kontakt os</div>
+    <?php if(isset($variables['mobile'])): ?>
+      <p>mobile</p>
+    <?php endif; ?>
   </div>
 </div>

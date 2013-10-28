@@ -67,7 +67,7 @@ function kunst_theme_preprocess_html(&$vars) {
  * We want to change the menu-items titles on the login form.
  */
 function kunst_theme_menu_alter(&$items) {
-  $items['search/node']['title'] = 'Hjemmesiden';
+  $items['search/node/%']['title'] = 'Hjemmesiden';
 }
 
 /**

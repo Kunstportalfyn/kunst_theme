@@ -1214,7 +1214,7 @@ ol.search-results {
 }
 
 footer .links.inline {
-  display: table;
+  display: inline-table;
 }
 .links li a {
   color: #A42978;

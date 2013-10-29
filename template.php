@@ -168,7 +168,7 @@ function kunst_theme_preprocess_node(&$variables) {
     ), 'node_' . $node->nid . '_og_image');
 }
 }
-function kunst_theme_page_alter($page) {
+function kunst_theme_page_alter($page, &$variables) {
   // <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   $viewport = array(
     '#type' => 'html_tag',
@@ -178,7 +178,9 @@ function kunst_theme_page_alter($page) {
     'content' =>  'width=device-width, initial-scale=1, maximum-scale=1'
     )
   );
-  drupal_add_html_head($viewport, 'viewport');
+  if ($variables["mobile"] && $_COOKIE["mobile"]) {
+    drupal_add_html_head($viewport, 'viewport');
+  }
 }
 
 /**

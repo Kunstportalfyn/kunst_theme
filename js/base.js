@@ -69,11 +69,11 @@
    * Replaces next/prev buttons in the galleria carousel with font-awesome icons
    */
   function galleriaFix() {
-    console.log("galleriaFix start");
-    console.log($(".galleria-image-nav-left").length);
+    //console.log("galleriaFix start");
+    //console.log($(".galleria-image-nav-left").length);
     $(".galleria-image-nav-right").html('<i class="icon-chevron-right"> </i>');
     $(".galleria-image-nav-left").html('<i class="icon-chevron-left"> </i>');
-    console.log($(".galleria-image-nav-left").html());
+    //console.log($(".galleria-image-nav-left").html());
   }
   
   /**

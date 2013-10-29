@@ -30,12 +30,12 @@
     $("#block-menu-block-1 > div > div > ul.menu > li.expanded").unbind();
     if($(window).width() > 767) {
       $("#block-menu-block-1 > div > div > ul.menu > li.expanded").mouseenter(function(e) {
-        console.log("Triggered on: mouseenter-> " + $(this).attr("class"));
+        //console.log("Triggered on: mouseenter-> " + $(this).attr("class"));
         $(this).find("> ul > li").stop(true, true).slideDown(100);
         $(this).find("> a > div > i").attr("class", "icon-caret-down");
       });
       $("#block-menu-block-1 ul li ul.menu > li.expanded > a").click(function(e) {
-        console.log("Triggered on: click-> " + $(this).parent().attr("class"));
+        //console.log("Triggered on: click-> " + $(this).parent().attr("class"));
         var item = $(this).parent().find("[class*='menu-mlid-']").attr("class");
         var itemId = getMenuItemClass(item);
         e.preventDefault();

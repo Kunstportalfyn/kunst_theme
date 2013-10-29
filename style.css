@@ -1376,11 +1376,11 @@ ul.inline, ul.links.inline {
 /*-------------------------------------------*
 /* Tabs and Tags
 /*-------------------------------------------*/
-.field-name-field-tags {
+.field-name-field-tagging {
   margin: 0 0 10px 0;
 }
 
-.field-name-field-tags a {
+.field-name-field-tagging a {
   -moz-transition: opacity 0.2s ease-in-out 0s;
   background: none repeat scroll 0 0 #a42978;
   color: #FFFFFF !important;
@@ -1392,15 +1392,15 @@ ul.inline, ul.links.inline {
   border-radius: 5px;
 }
 
-.field-name-field-tags a:hover {
+.field-name-field-tagging a:hover {
   background-color: #D7D5D3;
 }
 
-.field-name-field-tags .field-item {
+.field-name-field-tagging .field-item {
   margin: 0 1em 0 0;
 }
 
-.field-name-field-tags div {
+.field-name-field-tagging div {
   display: inline;
 }
 

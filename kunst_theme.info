@@ -2,6 +2,7 @@ name = Kunst theme
 description = Kunstportalfyn theme.
 core = 7.x
 engine = phptemplate
+dependencies[] = mobile_detect
 stylesheets[all][] = css/font-awesome-ie7.css
 stylesheets[all][] = css/font-awesome.css
 stylesheets[all][] = css/dark.css

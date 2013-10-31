@@ -1980,5 +1980,6 @@ body.cke_editable {
 }
 
 #block-search-form input[name=search_block_form] {
+  margin-top: 2px!important;
   height: 17px;
 }

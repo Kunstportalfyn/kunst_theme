@@ -171,26 +171,20 @@ header, hgroup, footer, section, article, aside {
   display: block;
 }
 
-/* Body, Common Classes & Wrap */
+/* Common Classes & Wrap */
 
-body {
-  padding-top: 2em;
-}
 #wrapper {
   margin: 0 auto 2em;
   max-width: 1000px;
   border-radius: 5px;
 }
 
-#shadow-wrapper {
-  box-shadow: 0px 0px 7px 7px #999;
-  border-radius: 5px;
-}
-
+#shadow-wrapper,
 #shadow-bottom,
 #shadow-bottom-front {
   box-shadow: 0px 0px 7px 7px #999;
   border-radius: 5px;
+  margin-top: 20px;
 }
 
 #header hgroup {
@@ -625,7 +619,6 @@ h2.pane-title {
 #footer-bottom-front {
   clear: both;
   background-color: transparent;
-  margin-top: 20px;
 }
 #footer-area {
   overflow: hidden;
@@ -1158,7 +1151,7 @@ button.full-width, input[type="submit"].full-width, input[type="reset"].full-wid
 #search-form input#edit-keys, #block-search-form .form-item-search-block-form input {
   float: left;
   font-size: 1em;
-  height: 1.143em;
+  /*height: 1.143em;*/
   margin-right: 5px;
   width: 9em;
 }
@@ -1784,7 +1777,7 @@ ul.inline, ul.links.inline {
   }
   .region-header #block-search-form .form-item-search-block-form .form-text {
     position: absolute;
-    right: 110px;
+    right: 112px;
     width: 70%;
     width: -webkit-calc(100% - 150px);
     width: -o-calc(100% - 150px);
@@ -2009,4 +2002,19 @@ body.cke_editable {
 
 #block-comment-recent .item-list {
   margin: 10px 10px 0px 0px;
+}
+
+#block-search-form input[name=op],
+#block-search-form button
+{
+  height: 27px!important;
+  margin-top: 2px!important;
+  padding: 3px 6px!important;
+  font-size: 26px;
+  line-height: 1;
+  border: 1px solid #a42978;
+}
+
+#block-search-form input[name=search_block_form] {
+  height: 17px;
 }

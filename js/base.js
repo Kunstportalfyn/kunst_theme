@@ -54,7 +54,7 @@
     var ddt = $( window ).width();
     if(ddt < 768) {
       var boxWidth = $("#header").width();
-      var editBoxWidth = boxWidth - 140;
+      var editBoxWidth = boxWidth - 148;
       $(".region-header #block-search-form .form-item-search-block-form .form-text").width(editBoxWidth);
       tmp = true;
     } else {

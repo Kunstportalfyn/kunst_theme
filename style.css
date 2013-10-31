@@ -105,46 +105,7 @@ img {
 ol, ul {
   list-style: none;
 }
-/* galleria images */
-.galleria-container {
-  background: none repeat scroll 0 0 #FFFFFF;
-  border: 1px solid #D3D3D3;
-  box-shadow: 0 0 2px 2px #ccc;
-  -moz-box-shadow: 0 0 2px 2px #ccc;
-  -webkit-box-shadow: 0 0 2px 2px #ccc;
-  overflow: hidden;
-  position: relative;
-}
 
-.galleria-image-nav-left {
-  background: none;
-  color: #fff;
-}
-
-.galleria-image-nav-left:before {
-  font-family: FontAwesome;
-  content: "\f053";
-  color: #000;
-  font-size: 50px;
-  padding-left: 10px;
-}
-
-.galleria-image-nav-right {
-  background: none;
-  color: #fff;
-}
-
-.galleria-image-nav-right:before {
-  font-family: FontAwesome;
-  content: "\f054";
-  color: #000;
-  font-size: 50px;
-  padding-left: 20px;
-}
-
-.galleria-image-nav {
-  margin-top: -30px;
-}
 
 /* tables still need 'cellspacing="0"' in the markup */
 table {
@@ -1767,7 +1728,10 @@ ul.inline, ul.links.inline {
 }
 
 @media screen and (max-width: 767px) {
-
+  /* galleria images */
+  .galleria-container {
+    width: 100%!important;
+  }
   .region-footer-first, .region-footer-second, .region-footer-third {
     border-bottom: 1px solid white;
     border-right: none;

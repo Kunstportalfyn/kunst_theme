@@ -392,7 +392,7 @@ table {
   background: #fff;
 }
 
-th {
+th, th.views-field-field-navn a, th.views-field-field-last-name a {
   font-weight: bold;
   padding: 10px 10px;
   background: #555;

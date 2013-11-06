@@ -103,21 +103,24 @@
       hide($content['links']);
       print render($content);
     ?>
-        <?php if ($display_submitted): ?>
-        <div>
-          <p>
-            <i class="icon-time"></i>
-            <?php print $submitted; ?> • <?php print $kunst_theme_updated; ?>
-          </p>
-        </div>
-    <?php endif; ?>
-  </div>
-
-  <?php if (!empty($content['links'])): ?>
-    <footer>
+    <?php if (!empty($content['links'])): ?>
+      <footer>
+          <?php if (!$teaser): ?>
+            <?php if ($display_submitted): ?>
+              <div>
+                    <h4>
+                      <?php print t('By: ') . $name; ?>
+                    </h4>
+                    <p>
+                      <i class="icon-time"></i>
+                      <?php print $submitted; ?> • <?php print $kunst_theme_updated; ?>
+                    </p>
+                  </div>
+                <?php endif; ?>
+              <?php endif; ?>
         <?php print render($content['links']['node']); ?>
-    </footer>
-  <?php endif; ?>
+      </footer>
+    <?php endif; ?>
 
   <?php print render($content['comments']); ?>
 <?php if (!$page): ?>

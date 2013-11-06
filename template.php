@@ -70,6 +70,31 @@ function kunst_theme_menu_alter(&$items) {
   $items['search/node/%']['title'] = 'Hjemmesiden';
 }
 
+
+/**
+ * Implements hook_preprocess_node().
+ *
+ * Override or insert variables into the node templates.
+ *
+ * @param $variables
+ *   An array of variables to pass to the theme template.
+ * @param $hook
+ *   The name of the template being rendered ("node" in this case.)
+ */
+function ddbasic_preprocess_node(&$variables, $hook) {
+  /**
+   * @TODO Use date-formats defined in the backend, do not hardcode formats...
+   *       ever
+   */
+  // Add updated to variables.
+  $variables['kunst_theme_updated'] = t('Updated: !datetime', array('!datetime' => format_date($variables['node']->changed, 'custom', 'l j. F Y')));
+
+  // Modified submitted variable
+  if ($variables['display_submitted']) {
+    $variables['submitted'] = t('Submitted: !datetime', array('!datetime' => format_date($variables['created'], 'custom', 'l j. F Y')));
+  }
+}
+
 /**
  * Override or insert variables into the page template.
  */

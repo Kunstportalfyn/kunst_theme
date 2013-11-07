@@ -103,6 +103,7 @@
       hide($content['links']);
       print render($content);
     ?>
+  </div>
     <?php if (!empty($content['links'])): ?>
       <footer>
           <?php if (!$teaser): ?>

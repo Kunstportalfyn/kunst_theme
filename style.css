@@ -1284,7 +1284,9 @@ ul.primary li a {
   border-radius: 4px 4px 0 0;
   margin-right: 5px;
 }
-
+li a.active {
+  text-decoration: underline;
+}
 ul.primary li a:hover, ul.primary li a.active {
   background: #666;
   border: none;

@@ -125,7 +125,7 @@
     <?php endif; ?>
   <?php if (!empty($content['links'])): ?>
         <footer>
-        <?php if (!$teaser): ?>
+            <?php if ($page): ?>
           <?php if ($display_submitted): ?>
             <div>
               <h4>
@@ -135,7 +135,9 @@
                 <i class="icon-time"></i>
                 <?php print $submitted; ?> • <?php print $kunst_theme_updated; ?>
               </p>
-            </div>
+                  </div>
+          <br />
+                <hr/>
           <?php endif; ?>
         <?php endif; ?>
         <?php print render($content['links']['node']); ?>
@@ -143,6 +145,6 @@
     <?php endif; ?>
 
   <?php print render($content['comments']); ?>
-    <?php if (!$page): ?>
+        <?php if ($teaser): ?>
     </article> <!-- /.node -->
 <?php endif; ?>

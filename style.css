@@ -1291,6 +1291,7 @@ ul.primary li a:hover, ul.primary li a.active {
   background: #666;
   border: none;
   color: #fff;
+  text-decoration: underline;
 }
 
 ul.primary li a:hover {

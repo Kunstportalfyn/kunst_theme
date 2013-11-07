@@ -255,10 +255,12 @@ a {
   color: #A53D78;
   text-decoration: none;
 }
-a:focus, a:active, a:hover {
+a:focus, a:hover {
   text-decoration: none;
 }
-
+a:active{
+  text-decoration: underline;
+}
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
@@ -1216,7 +1218,9 @@ footer .links.inline {
 /*-------------------------------------------*/
 
 /* Menu tree*/
-
+.expanded .menu {
+  margin-left: 15px;
+}
 .block-menu-tree, .pane-menu-tree {
   border: 1.5px solid rgba(166, 48, 124, 0.5);
   padding: 10px;
@@ -1316,7 +1320,7 @@ ul.secondary li a, ul.secondary li a:link {
 ul.secondary li a:hover, ul.secondary li a.active {
   background: #888;
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 ul.secondary a.active {

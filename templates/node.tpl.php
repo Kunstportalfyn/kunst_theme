@@ -75,76 +75,64 @@
  */
 ?>
 <?php if ($teaser): ?>
-  <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <?php endif; ?>
-  <?php if ($teaser): ?>
+    <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
     <header>
-    <?php endif; ?>
-    <?php print render($title_prefix); ?>
-      <?php if ($teaser): ?>
-        <h2 class="title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php if ($teaser): ?>
-        <?php if ($display_submitted): ?>
-          <div class="submitted" >
-              <?php print render($content['field_category']); ?><?php print ' ' . format_date(time(), 'custom', 'l j F Y') . ' '; ?>
-                </div>
-          <?php endif; ?>
-      </header>
-    <?php endif; ?>
-
-    <?php if ($page): ?>
-      <h2 class="heading"><?php print $title; ?></h2>
+      <h2 class="title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
       <?php if ($display_submitted): ?>
-        <?php print render($content['field_category']); ?><?php print ' ' . format_date(time(), 'custom', 'l j F Y') . ' '; ?>
-      <?php endif; ?>
-      <div class="grid-row">
-        <div class="lead">
-          <p>
-            <?php print render($content['field_lead'][0]); ?>
-          </p>
+        <div class="submitted" >
+          <?php print render($content['field_category']); ?><?php print ' ' . format_date(time(), 'custom', 'l j F Y') . ' '; ?>
         </div>
-      </div>
-      <hr />
-    <?php endif; ?>
+      <?php endif; ?>
+    </header>
+  <?php endif; ?>
 
-    <div class="content"<?php print $content_attributes; ?>>
-
-    <?php
-    // Hide fields that will be displayed as panel panes instead
-    hide($content['comments']);
-    hide($content['field_category']);
-    // Hide fields now so that we can render them later.
-    hide($content['links']);
-    print render($content);
-    ?>
-  </div>
-  <?php if ($page) : ?>
-        <br /><hr/>
-    <?php endif; ?>
-  <?php if (!empty($content['links'])): ?>
-        <footer>
-            <?php if ($page): ?>
-          <?php if ($display_submitted): ?>
-            <div>
-              <h4>
-                <?php print t('By: ') . $name; ?>
-              </h4>
-              <p>
-                <i class="icon-time"></i>
-                <?php print $submitted; ?> • <?php print $kunst_theme_updated; ?>
-              </p>
-                  </div>
-          <br />
-                <hr/>
-          <?php endif; ?>
+      <?php if ($page): ?>
+        <?php if ($display_submitted): ?>
+          <?php print render($content['field_category']); ?><?php print ' ' . format_date(time(), 'custom', 'l j F Y') . ' '; ?>
         <?php endif; ?>
-        <?php print render($content['links']['node']); ?>
-      </footer>
-    <?php endif; ?>
+        <?php if (!empty($content['field_lead'][0])): ?>
+          <div class="grid-row">
+            <div class="lead">
+              <p>
+                <?php print render($content['field_lead'][0]); ?>
+              </p>
+            </div>
+          </div>
+          <hr/>
+        <?php endif; ?>
+                <?php endif; ?>
+
+        <div class="content"<?php print $content_attributes; ?>>
+        <?php
+        // Hide fields that will be displayed as panel panes instead
+        hide($content['comments']);
+        hide($content['field_category']);
+        // Hide fields now so that we can render them later.
+        hide($content['links']);
+        print render($content);
+        ?>
+      </div>
+        
+        <footer>
+          <?php if ($page) : ?>
+            <?php if ($display_submitted): ?>
+              <br /><hr/>
+              <div>
+                <h4>
+                  <?php print t('By: ') . $name; ?>
+                </h4>
+                <p>
+                  <i class="icon-time"></i>
+                  <?php print $submitted; ?> • <?php print $kunst_theme_updated; ?>
+                </p>
+              </div>
+              <hr/>
+            <?php endif; ?>
+          <?php endif; ?>
+          <?php print render($content['links']['node']); ?>
+        </footer>      
 
   <?php print render($content['comments']); ?>
-        <?php if ($teaser): ?>
+      <?php if ($teaser): ?>
     </article> <!-- /.node -->
 <?php endif; ?>

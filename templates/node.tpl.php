@@ -91,13 +91,11 @@
         <?php print render($content['field_category']); ?><?php print ' ' . format_date(time(), 'custom', 'l j F Y') . ' '; ?>
       <?php endif; ?>
       <?php if (!empty($content['field_lead'][0])): ?>
-        <div class="grid-row">
-          <div class="lead">
+          <div>
             <p>
               <?php print render($content['field_lead'][0]); ?>
             </p>
           </div>
-        </div>
         <hr/>
       <?php endif; ?>
     <?php endif; ?>

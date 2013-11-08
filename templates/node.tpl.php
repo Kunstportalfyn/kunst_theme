@@ -129,9 +129,11 @@
           <hr/>
         <?php endif; ?>
       <?php endif; ?>
-      <footer>
-        <?php print render($content['links']['node']); ?>
-      </footer>      
+          <?php if (!empty($content['links'])): ?>
+            <footer>
+              <?php print render($content['links']['node']); ?>
+            </footer>
+          <?php endif; ?>
 
   <?php print render($content['comments']); ?>
       <?php if ($teaser): ?>

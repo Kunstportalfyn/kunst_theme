@@ -123,11 +123,11 @@
       </div>
     </div>
   <?php endif; ?>
-
+  <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']): ?>
   <footer id="shadow-bottom">
     <div id="footer-bottom" class="clearfix">
       <div class="clearfix">
-      <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']): ?>
+      
         <div id="footer-block-wrap" class="clearfix in<?php print (bool) $page['footer_first'] + (bool) $page['footer_second'] + (bool) $page['footer_third']; ?>">
           <?php if($page['footer_first']): ?>
             <div class="footer-block"><?php print render($page['footer_first']); ?></div>
@@ -142,10 +142,10 @@
             <div class="footer-block" ><?php print render($page['footer_fourth']); ?></div>
           <?php endif; ?>
         </div>
-      <?php endif; ?>
       </div>
     </div>
   </footer>
+  <?php endif; ?>
   
   <div id="bottom" class="clearfix">
     <?php if (theme_get_setting('socialicon_display', 'kunst_theme')): ?>

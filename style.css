@@ -1401,6 +1401,7 @@ ul.inline, ul.links.inline {
 
 .profile .field-label {
   width: 120px;
+  margin-right: 60px;
 }
 
 .profile .street-block {

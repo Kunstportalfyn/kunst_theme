@@ -490,7 +490,16 @@ td {
   color: #222222;
   text-decoration: none;
 }
-.node h2.title, h1.page-title {
+.node h2.title {
+  clear: both;
+  color: #222222;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding-bottom: 0.3em;
+  padding-top: 15px;
+}
+h1.page-title {
   clear: both;
   color: #222222;
   font-size: 24px;

@@ -100,6 +100,15 @@
     $("#bottom-block-wrap .bottom-block").height($max);
   }
   
+  /**
+   * 
+   * Equalizes the heights of the footer-block blocks
+   */
+  function footerBlockFix() {
+    var $max = getMaxHeight($("#footer-block-wrap .bottom-block"));
+    $("#footer-block-wrap .bottom-block").height($max);
+  }
+  
   function getMaxHeight(obj) {
     if(!obj) return false;
     if(obj.length === 0) return false;
@@ -116,8 +125,9 @@
   $().ready(function(){
     loginFormWrap();
     galleriaFix();
-    rssFix();
+    //rssFix();
     bottomBlockFix();
+    footerBlockFix();
     // check if user is logged in
     if($("#block-user-login").length) {
       showLoginButton();

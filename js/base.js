@@ -105,8 +105,8 @@
    * Equalizes the heights of the footer-block blocks
    */
   function footerBlockFix() {
-    var $max = getMaxHeight($("#footer-block-wrap .bottom-block"));
-    $("#footer-block-wrap .bottom-block").height($max);
+    var $max = getMaxHeight($("#footer-block-wrap .footer-block"));
+    $("#footer-block-wrap .footer-block").height($max);
   }
   
   function getMaxHeight(obj) {

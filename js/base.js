@@ -96,6 +96,7 @@
    * Equalizes the heights of the bottom-block blocks
    */
   function bottomBlockFix() {
+    $("#bottom-block-wrap .bottom-block").attr("style","");
     var $max = getMaxHeight($("#bottom-block-wrap .bottom-block"));
     $("#bottom-block-wrap .bottom-block").height($max);
   }
@@ -105,6 +106,7 @@
    * Equalizes the heights of the footer-block blocks
    */
   function footerBlockFix() {
+    $("#footer-block-wrap .footer-block > div").attr("style","");
     var $max = getMaxHeight($("#footer-block-wrap .footer-block > div"));
     $("#footer-block-wrap .footer-block > div").height($max);
   }
@@ -143,5 +145,7 @@
    */
   $(window).resize(function() {
     setSearchFieldWidth();
+    bottomBlockFix();
+    footerBlockFix();
   });
 })(jQuery);

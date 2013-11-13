@@ -639,9 +639,9 @@ h2.pane-title {
 
 #footer-block-wrap.in3 .footer-block {
   float: left;
-  margin-right: 2%;
+  margin-right: 0%;
   margin-left: 2%;
-  width: 21%;
+  width: 23%;
 }
 #footer-block-wrap.in3 .footer-block + .footer-block + .footer-block + .footer-block {
   margin-right: 0;
@@ -652,6 +652,13 @@ h2.pane-title {
   margin-top: 10px;
   min-height: 150px;
 }
+
+.region-footer-fourth {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-height: 150px;
+}
+
 #footer-block-wraps h2 {
   color: #333333 !important;
   font-size: 13.65px;

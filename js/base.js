@@ -52,7 +52,7 @@
    */
   function setSearchFieldWidth() {
     var ddt = $( window ).width();
-    if(ddt < 768) {
+    if(ddt < 750) {
       var boxWidth = $("#header").width();
       var editBoxWidth = boxWidth - 148;
       $(".region-header #block-search-form .form-item-search-block-form .form-text").width(editBoxWidth);

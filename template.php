@@ -70,6 +70,20 @@ function kunst_theme_menu_alter(&$items) {
   $items['search/node/%']['title'] = 'Hjemmesiden';
 }
 
+function kunst_theme_preprocess_views_view(&$vars) {
+  // Get my view
+  if ($vars['view']->name == 'kunsten.nu') {
+    //get the title of the node shown in the view
+    $nid = $vars['view']->result[0]->nid;
+    $node = node_load($nid);
+    $my_title = $node->title;
+
+    /* Code to dynamically set title here...
+      Override view's title since drupal_set_title() is not working. */
+    $vars['view']->build_info['title'] = $my_title;
+  }
+}
+
 /**
  * Override or insert variables into the page template.
  */

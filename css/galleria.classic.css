@@ -2,7 +2,16 @@
 
 #galleria-loader{height:1px!important}
 
-
+.galleria-lightbox-prev {
+  font: bold 46px/76px arial,sans-serif!important;
+  left: 0!important;
+  height: 80px!important;
+}
+.galleria-lightbox-next {
+  font: bold 46px/76px arial,sans-serif!important;
+  right: 0!important;
+  height: 80px!important;
+}
 
 /* galleria images */
 .galleria-container {

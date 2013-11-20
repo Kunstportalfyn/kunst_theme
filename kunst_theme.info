@@ -20,6 +20,7 @@ regions[help]           = Help
 regions[bottom_first]   = First Bottom
 regions[bottom_second]  = Second Bottom
 regions[bottom_third]   = Third Bottom
+regions[bottom_fourth]   = Fourth Bottom
 regions[footer_first]   = Footer first
 regions[footer_second]  = Footer second
 regions[footer_third]   = Footer Third

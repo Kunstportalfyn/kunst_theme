@@ -106,8 +106,8 @@
     <div id="shadow-bottom-front">
       <div id="footer-bottom-front">
         <div id="footer-area" class="clearfix">
-          <?php if ($page['bottom_first'] || $page['bottom_second'] || $page['bottom_third']): ?>
-            <div id="bottom-block-wrap" class="clearfix in<?php print (bool) $page['bottom_first'] + (bool) $page['bottom_second'] + (bool) $page['bottom_third']; ?>">
+          <?php if ($page['bottom_first'] || $page['bottom_second'] || $page['bottom_third'] || $page['bottom_fourth']): ?>
+            <div id="bottom-block-wrap" class="clearfix in<?php print (bool) $page['bottom_first'] + (bool) $page['bottom_second'] + (bool) $page['bottom_third'] + (bool) $page['bottom_fourth']; ?>">
               <?php if ($page['bottom_first']): ?><div class="bottom-block">
               <?php print render($page['bottom_first']); ?>
                 </div><?php endif; ?>
@@ -116,6 +116,9 @@
                 </div><?php endif; ?>
               <?php if ($page['bottom_third']): ?><div class="bottom-block">
               <?php print render($page['bottom_third']); ?>
+                </div><?php endif; ?>
+                <?php if ($page['bottom_fourth']): ?><div class="bottom-block">
+              <?php print render($page['bottom_fourth']); ?>
                 </div><?php endif; ?>
             </div>
           <?php endif; ?>

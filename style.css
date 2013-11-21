@@ -1870,9 +1870,10 @@ ul.inline, ul.links.inline {
     text-align: center;
     width: 97%;
   }
-  #block-system-main > div.content > div > div > div.panels-flexible-row-first {
-    display: none;
-  }  
+  .view-ding-tabroll,
+  .block-menu-tree {
+    display: none
+  }
 }
 
 @media (max-device-width: 650px) {

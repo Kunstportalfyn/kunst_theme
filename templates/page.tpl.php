@@ -172,9 +172,9 @@
     <?php if ($is_front): ?>
       <?php if ($variables['mobile']) : ?>
         <?php if ($_GET['m'] == 1) : ?>
-          <button onclick="jQuery.fn.goDesktop();" type="button">Gå til desktop version</button>
+          <button onclick="jQuery.fn.goDesktop();" type="button"><?php echo t("Go to the desktop version"); ?></button>
         <?php else : ?>
-          <button onclick="jQuery.fn.goMobile();" type="button">Gå til mobile version</button>
+          <button onclick="jQuery.fn.goMobile();" type="button"><?php echo t("Go to the mobile version"); ?></button>
         <?php endif; ?>
       <?php endif; ?>
     <?php endif; ?>

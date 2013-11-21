@@ -1259,13 +1259,17 @@ footer .links.inline {
   padding: 10px;
 }
 .block-menu-tree a, .pane-menu-tree a {
-  padding: 10px;
+  padding: 10px 0 10px 0;
   color: black;
+}
+div.inline-block {
+  display: table-cell;
 }
 .block.block-menu-tree .icon-play, .pane-menu-tree .icon-play {
   color: #A42978;
-  float: left;
+  padding-right: 10px;
   margin-top: 5px;
+  display:table-cell;
 }
 .item-list ul {
   margin: 0;

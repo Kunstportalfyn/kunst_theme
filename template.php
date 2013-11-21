@@ -23,7 +23,9 @@ function kunst_theme_menu_link(array $variables) {
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   if (!empty($icon)) {
     // Insert the icons (<i> tags) into the <a> tag.
-    $output = substr_replace($output, $icon, -4, 0);
+    $output = substr_replace($output, $icon, strpos($output, '>') + 1, 0);
+    $output = substr_replace($output, '<div class="inline-block">', strpos($output, '/i>') + 3, 0);
+    $output = substr_replace($output, '</div>', strpos($output, '</a'), 0);
   }
 
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";

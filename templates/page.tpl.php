@@ -164,7 +164,7 @@
         <?php if ($twitter_url): ?>
         <li><a target="_blank" title="<?php print $site_name; ?> in Twitter" href="<?php print $twitter_url; ?>"><i class="icon-twitter-sign" > </i></a></li>
         <?php endif; ?>
-        <li><a target="_blank" title="<?php print $site_name; ?> in RSS" href="<?php print $front_page; ?>rss.xml"> <i class="icon-rss-sign" > </i></a></li>
+        <li><a target="_blank" title="<?php print $site_name; ?> in RSS" href="/rss.xml"> <i class="icon-rss-sign" > </i></a></li>
       </ul>
     </div>
     <?php endif; ?>

@@ -1281,6 +1281,7 @@ ul.menu li {
   margin: 0;
   padding: 0;
   list-style: none;
+  white-space: nowrap;
 }
 
 ul.inline {
@@ -1795,17 +1796,14 @@ ul.inline, ul.links.inline {
     width: calc(100% - 150px);
     float: none;
   }
-
   #edit-submit {
     position: absolute;
     right: 80px;
     width: auto;
   }
-
   .region-header #block-search-form div.content {
 
   }
-
   .region-header #block-search-form {
     margin-top: 8px;
     width: 100%;
@@ -1814,7 +1812,6 @@ ul.inline, ul.links.inline {
   #wrapper {
     max-width: 480px;
   }
-  /* @media (max-width: 650px) Reduce font-sizes for better readability on smaller devices */
   body {
     padding: 0;
   }
@@ -1879,7 +1876,11 @@ ul.inline, ul.links.inline {
     text-align: center;
     width: 97%;
   }
+  #block-system-main > div.content > div > div > div.panels-flexible-row-first {
+    display: none;
+  }  
 }
+
 @media (max-device-width: 650px) {
   .region-header #block-search-form .form-item-search-block-form .form-text {
     /*width: 30em;*/

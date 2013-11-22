@@ -116,6 +116,34 @@ function kunst_theme_preprocess_page(&$vars) {
     'title' => "RSS",
     'href' => "/rss.xml"
   ));
+  
+  if(!isset($_GET["m"])) {
+    $_GET["m"] = 1;
+  }
+
+  $viewport = array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' =>  'viewport',
+      'content' =>  'width=device-width, initial-scale=1, maximum-scale=1'
+    )
+  );
+
+  if ($_GET["m"] == 1) {
+    drupal_add_html_head($viewport, 'viewport');
+  }
+}
+
+function kunst_theme_url_outbound_alter(&$path, &$options, $original_path) {
+  if(!isset($options["query"]["m"]) && $options['external'] != TRUE) {
+    if(isset($_GET["m"])) {
+      array_push($options["query"], array("m" => $_GET["m"]));
+    }
+    else {
+      array_push($options["query"], array("m" => 1));
+    }
+  }
 }
 
 /**

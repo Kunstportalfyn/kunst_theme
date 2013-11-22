@@ -107,6 +107,15 @@ function kunst_theme_preprocess_page(&$vars) {
   else {
     $vars['secondary_menu'] = FALSE;
   }
+  /**
+   * Adds rss to page header
+   */
+  drupal_add_html_head_link(array(
+    'rel' => 'alternate',
+    'type' => 'application/rss+xml',
+    'title' => "RSS",
+    'href' => "/rss.xml"
+  ));
 }
 
 /**

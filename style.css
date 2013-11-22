@@ -631,6 +631,14 @@ h2.pane-title {
   float: left;
   width: 24.9%;
 }
+
+#bottom-block-wrap.in4 .bottom-block h2 {
+  white-space: nowrap;
+  overflow: visible;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 #bottom-block-wrap .bottom-block:last-child {
   border-right: 0;
 }

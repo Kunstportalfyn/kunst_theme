@@ -169,13 +169,12 @@
     </div>
     <?php endif; ?>
     <div class="credit">Kunstportal Fyn er et samarbejdsprojekt mellem de fynske folkebiblioteker støttet af Kulturregion Fyn · Om Kunstportalfyn.dk · Kontakt os</div>
-    <?php 
-      $m = new Mobile_Detect();
-      if($m->isMobile()):;?>
+    <?php
+      if($page['mobile_detect']["is_mobile"]):?>
       <?php if ($_GET['m'] == 1) : ?>
-        <a href="<?php echo mobile_detect_url_add_mode($page_url,0);?>"><button type="button"><?php echo t("Go to the desktop version"); ?></button></a>
+        <a href="<?php echo kunst_theme_url_add_mode($page_url,0);?>"><button type="button"><?php echo t("Go to the desktop version"); ?></button></a>
       <?php else : ?>
-        <a href="<?php echo mobile_detect_url_add_mode($page_url,1);?>"><button type="button"><?php echo t("Go to the mobile version"); ?></button></a>
+        <a href="<?php echo kunst_theme_url_add_mode($page_url,1);?>"><button type="button"><?php echo t("Go to the mobile version"); ?></button></a>
       <?php endif; ?>
     <?php endif; ?>
   </div>

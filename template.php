@@ -1,4 +1,5 @@
 <?php
+require_once "mobile_detect.class.inc";
 /* for awsome fonts on menus */
 function kunst_theme_menu_link(array $variables) {
   $element = $variables['element'];
@@ -75,6 +76,9 @@ function kunst_theme_menu_alter(&$items) {
  * Override or insert variables into the page template.
  */
 function kunst_theme_preprocess_page(&$vars) {
+  $m = new Mobile_Detect();
+  $vars['page']['mobile_detect']['is_mobile'] = $m->isMobile();
+  $vars['page']['mobile_detect']['is_tablet'] = $m->isTablet();
   if (isset($vars['main_menu'])) {
     $vars['main_menu'] = theme('links__system_main_menu', array(
       'links' => $vars['main_menu'],
@@ -137,6 +141,9 @@ function kunst_theme_preprocess_page(&$vars) {
 
 function kunst_theme_url_outbound_alter(&$path, &$options, $original_path) {
   if(!isset($options["query"]["m"]) && $options['external'] != TRUE) {
+    if(!isset($options["query"])) {
+      $options["query"] = array();
+    }
     if(isset($_GET["m"])) {
       array_push($options["query"], array("m" => $_GET["m"]));
     }
@@ -250,4 +257,12 @@ function kunst_theme_form_alter(&$form, &$form_state, $form_id) {
       $form['actions']['submit']['#attributes']['class'][] = 'btn-info';
       break;
   }
+}
+
+function kunst_theme_url_add_mode($url, $mobile) {
+  $pos = strpos($url, "?");
+  if($pos !== FALSE) {
+    $url = substr($url, 0 , $pos);
+  }
+  return $url . "?m=" . $mobile;
 }

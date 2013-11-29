@@ -2037,3 +2037,11 @@ body.cke_editable {
   margin-top: 2px!important;
   height: 17px;
 }
+
+#featured .ui-tabs-panel .info {
+  height: 30%;
+}
+
+#featured.ui-tabs .ui-tabs-panel .info h3 {
+  margin: 5px 10px 0 20px;
+}

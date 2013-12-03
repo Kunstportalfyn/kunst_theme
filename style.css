@@ -445,7 +445,6 @@ td {
   background-color: #e1d8cd;
   position: relative;
   border-radius: 5px;
-  -moz-border-radius: 5px;
 }
 #site-name {
   margin-right: 270px;
@@ -762,9 +761,6 @@ fieldset {
   padding: 0 0 10px;
   position: relative;
   top: 12px; /* Offsets the negative margin of legends */
-  -khtml-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -779,12 +775,6 @@ fieldset {
 .filter-wrapper {
   top: 0;
   padding: 1em 0 0.2em;
-  -khtml-border-radius-topright: 0;
-  -khtml-border-radius-topleft: 0;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-topleft: 0;
-  -webkit-border-top-left-radius: 0;
-  -webkit-border-top-right-radius: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -808,9 +798,6 @@ fieldset {
 
 fieldset.collapsed {
   background: transparent;
-  -khtml-border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
   border-radius: 0;
 }
 
@@ -828,20 +815,11 @@ fieldset legend {
   text-shadow: 0 1px 0 #fff;
   top: -12px;
   width: 100%;
-  -khtml-border-radius-topleft: 4px;
-  -moz-border-radius-topleft: 4px;
-  -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
-  -khtml-border-radius-topright: 4px;
-  -moz-border-radius-topright: 4px;
-  -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
 }
 
 fieldset.collapsed legend {
-  -khtml-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -909,9 +887,6 @@ input.form-text, textarea.form-textarea, select.form-select {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -khtml-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -920,9 +895,6 @@ input.form-text, textarea.form-textarea, select.form-select {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -khtml-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -931,9 +903,6 @@ input.form-text, textarea.form-textarea, select.form-select {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -khtml-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -942,12 +911,6 @@ input.form-text, textarea.form-textarea, select.form-select {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -khtml-border-top-left-radius: 4px;
-  -khtml-border-top-right-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  -moz-border-radius-topright: 4px;
-  -webkit-border-top-left-radius: 4px;
-  -webkit-border-top-right-radius: 4px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
@@ -957,12 +920,6 @@ input.form-text, textarea.form-textarea, select.form-select {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -khtml-border-bottom-left-radius: 4px;
-  -khtml-border-bottom-right-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -976,9 +933,6 @@ input.form-text, textarea.form-textarea, select.form-select {
 
 .comment-form input, .comment-form .form-select {
   margin: 0;
-  -khtml-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -1079,7 +1033,10 @@ div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
 
 /* Form Buttons */
 
-button, input[type="submit"], input[type="reset"], input[type="button"] {
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
   /* IE10 */
   background-image: -ms-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%);
   /* Mozilla Firefox */
@@ -1106,7 +1063,10 @@ button, input[type="submit"], input[type="reset"], input[type="button"] {
   font-size: 13px;
 }
 
-button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
   /* IE10 */
   background-image: -ms-linear-gradient(top, #DBDBDB 0%, #F2F2F2 100%);
   /* Mozilla Firefox */
@@ -1119,11 +1079,6 @@ button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type=
   background-image: -webkit-linear-gradient(top, #DBDBDB 0%, #F2F2F2 100%);
   /* Proposed W3C Markup */
   background-image: linear-gradient(top, #DBDBDB 0%, #F2F2F2 100%);
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
   border-radius: 6px;
   -moz-box-shadow: inset 0 1px 0 0 white;
   -webkit-box-shadow: inset 0 1px 0 0 white;
@@ -1132,7 +1087,9 @@ button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type=
   cursor: pointer;
 }
 
-button.full-width, input[type="submit"].full-width, input[type="reset"].full-width, input[type="button"].full-width {
+button.full-width, input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width {
   width: 100%;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -1152,7 +1109,8 @@ button.full-width, input[type="submit"].full-width, input[type="reset"].full-wid
   margin-top: 0;
 }
 
-#search-form input#edit-keys, #block-search-form .form-item-search-block-form input {
+#search-form input#edit-keys,
+#block-search-form .form-item-search-block-form input {
   float: left;
   font-size: 1em;
   /*height: 1.143em;*/
@@ -1160,7 +1118,8 @@ button.full-width, input[type="submit"].full-width, input[type="reset"].full-wid
   width: 9em;
 }
 
-#search-block-form input.form-submit, #search-form input.form-submit {
+#search-block-form input.form-submit,
+#search-form input.form-submit {
   margin-left: 0;
   margin-right: 0;
   height: 25px;
@@ -1173,7 +1132,10 @@ button.full-width, input[type="submit"].full-width, input[type="reset"].full-wid
   overflow: hidden;
 }
 
-#search-block-form input.form-submit:hover, #search-block-form input.form-submit:focus, #search-form input.form-submit:hover, #search-form input.form-submit:focus {
+#search-block-form input.form-submit:hover,
+#search-block-form input.form-submit:focus,
+#search-form input.form-submit:hover,
+#search-form input.form-submit:focus {
   background-position: center bottom;
 }
 
@@ -1680,7 +1642,15 @@ ul.inline, ul.links.inline {
 
 /* =Responsive Structure
  ----------------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  #block-search-form {
+    padding-top: 2px;
+  }
+}
 @media screen and (min-width: 961px) {
+  #block-search-form {
+    padding-top: 15px;
+  }
 }
 @media screen and (min-width: 1061px) {
   .region-header #block-search-form {

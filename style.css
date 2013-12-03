@@ -148,6 +148,10 @@ header, hgroup, footer, section, article, aside {
   margin-top: 20px;
 }
 
+#shadow-bottom h2 {
+  font-size: 20px;
+}
+
 #header hgroup {
   margin: 0 3%;
   padding: 2.5em 0;

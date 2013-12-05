@@ -2027,3 +2027,7 @@ body.cke_editable {
 #featured.ui-tabs .ui-tabs-panel .info h3 {
   margin: 5px 10px 0 20px;
 }
+
+.ding-campaign-item p {
+  margin: 0;
+}

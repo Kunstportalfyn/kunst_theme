@@ -390,7 +390,8 @@ sub {
   top: .5ex;
 }
 
-table {
+.view-exhibitor-lists table,
+.view-profil-liste table {
   margin: 0 0 1.5em;
   width: 100%;
   border: 1px solid #ddd;
@@ -398,18 +399,25 @@ table {
   background: #fff;
 }
 
-th, th.views-field-field-navn a, th.views-field-field-last-name a {
+.view-exhibitor-lists th,
+.view-profil-liste th,
+.view-exhibitor-lists th.views-field-field-navn a,
+.view-profil-liste th.views-field-field-navn a,
+.view-exhibitor-lists th.views-field-field-last-name a,
+.view-profil-liste th.views-field-field-last-name a {
   font-weight: bold;
   padding: 10px 10px;
   background: #555;
   color: #fff;
 }
 
-tr {
+.view-exhibitor-lists table tr,
+.view-profil-liste table tr {
   padding: 5px 5px;
 }
 
-td {
+.view-exhibitor-lists table tr td,
+.view-profil-liste table tr td {
   padding: 5px 10px;
   border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
@@ -1394,6 +1402,11 @@ ul.inline, ul.links.inline {
   border: 1px solid #999;
   padding: 5px;
   box-shadow: 0px 0px 2px 2px #ccc;
+  float: none;
+  width: 240px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .profile .field {
@@ -2018,4 +2031,8 @@ body.cke_editable {
 
 #featured.ui-tabs .ui-tabs-panel .info h3 {
   margin: 5px 10px 0 20px;
+}
+
+.ding-campaign-item p {
+  margin: 0;
 }

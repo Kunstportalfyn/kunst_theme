@@ -388,7 +388,7 @@ sub {
 }
 
 .view-exhibitor-lists table,
-.view-profil-liste table {
+.view-profil-liste table, view-editors table {
   margin: 0 0 1.5em;
   width: 100%;
   border: 1px solid #ddd;
@@ -401,7 +401,8 @@ sub {
 .view-exhibitor-lists th.views-field-field-navn a,
 .view-profil-liste th.views-field-field-navn a,
 .view-exhibitor-lists th.views-field-field-last-name a,
-.view-profil-liste th.views-field-field-last-name a {
+.view-profil-liste th.views-field-field-last-name a, .view-editors th, .view-editors th.views-field-field-navn a, 
+.view-editors th.views-field-field-last-name a{
   font-weight: bold;
   padding: 10px 10px;
   background: #555;
@@ -409,12 +410,14 @@ sub {
 }
 
 .view-exhibitor-lists table tr,
-.view-profil-liste table tr {
+.view-profil-liste table tr,
+.view-editors table tr{
   padding: 5px 5px;
 }
 
 .view-exhibitor-lists table tr td,
-.view-profil-liste table tr td {
+.view-profil-liste table tr td,
+.view-editors table tr td{
   padding: 5px 10px;
   border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;

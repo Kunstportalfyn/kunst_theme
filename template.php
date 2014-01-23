@@ -1,4 +1,11 @@
 <?php
+function kunst_theme_preprocess_user_profile(&$variables) {
+
+   $profile = array_keys($variables['elements']['profile_main']['view']['profile2']);
+   // Add updated to variables.
+  $updated = t('Updated: !datetime', array('!datetime' => format_date($variables['elements']['profile_main']['view']['profile2'][$profile[0]]['#entity']->changed, 'custom', 'l j. F Y')));
+print render($updated);
+}
 require_once "mobile_detect.class.inc";
 /* for awsome fonts on menus */
 function kunst_theme_menu_link(array $variables) {

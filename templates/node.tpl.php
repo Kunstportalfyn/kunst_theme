@@ -80,15 +80,15 @@
       <h2 class="title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
       <?php if ($display_submitted): ?>
         <div class="submitted" >
-          <?php print render($content['field_category']); ?><?php print ' ' . format_date(time(), 'custom', 'l j F Y') . ' '; ?>
+          <?php print render($content['field_category']); ?><?php print $submitted; ?>
         </div>
       <?php endif; ?>
     </header>
   <?php endif; ?>
 
-    <?php if ($page): ?>
+    <?php if (!$teaser): ?>
       <?php if ($display_submitted): ?>
-        <?php print render($content['field_category']); ?><?php print ' ' . format_date(time(), 'custom', 'l j F Y') . ' '; ?>
+        <?php print render($content['field_category']); ?>
       <?php endif; ?>
       <?php if (!empty($content['field_lead'][0])): ?>
           <div>
@@ -112,7 +112,7 @@
       </div>
 
 
-      <?php if ($page) : ?>
+      <?php if (!$teaser) : ?>
         <?php if ($display_submitted): ?>
           <br /><hr/>
           <div>

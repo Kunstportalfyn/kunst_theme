@@ -298,6 +298,9 @@ hr {
 }
 
 /* Text elements */
+.field-name-body ul {
+    margin-left: 20px;
+}
 ul, ol {
   margin: 0;
 }

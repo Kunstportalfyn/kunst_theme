@@ -80,7 +80,7 @@
       <h2 class="title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
       <?php if ($display_submitted): ?>
         <div class="submitted" >
-          <?php print render($content['field_category']); ?><?php print $submitted; ?>
+          <?php print render($content['field_category']); ?><?php print format_date($variables['node']->created, 'custom', 'l j. F Y'); ?>
         </div>
       <?php endif; ?>
     </header>

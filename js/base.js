@@ -5,6 +5,7 @@
 (function($){
   $.fn.loginBox = function(){
     login();
+    $("#edit-name").focus();
   };
 
   var loginForm = "";

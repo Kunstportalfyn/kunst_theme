@@ -1,10 +1,20 @@
 <?php
-function kunst_theme_preprocess_user_profile(&$variables) {
+ function kunst_theme_css_alter(&$css) {
+  $path = explode('/', request_path());
 
-   $profile = array_keys($variables['elements']['profile_main']['view']['profile2']);
-   // Add updated to variables.
-  $updated = t('Updated: !datetime', array('!datetime' => format_date($variables['elements']['profile_main']['view']['profile2'][$profile[0]]['#entity']->changed, 'custom', 'l j. F Y')));
-print render($updated);
+  if (is_array($path) && $path[0] == 'print') {
+    $css[drupal_get_path('module', 'print') . '/css/print.css']['data'] = path_to_theme() . '/css/media-print.css';
+  }
+}
+function kunst_theme_preprocess_user_profile(&$variables) {
+  $profile = array_keys($variables['elements']['profile_main']['view']['profile2']);
+  $timestamp = $variables['elements']['profile_main']['view']['profile2'][$profile[0]]['#entity']->changed;
+  // Add updated to variables.
+  $updated = t('Updated: !datetime', array('!datetime' => format_date($timestamp, 'custom', 'l j. F Y')));
+  
+  if (!empty($timestamp)) {
+    print render($updated);
+  }
 }
 require_once "mobile_detect.class.inc";
 /* for awsome fonts on menus */

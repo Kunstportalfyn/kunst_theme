@@ -168,7 +168,7 @@
       </ul>
     </div>
     <?php endif; ?>
-    <div class="credit">Kunstportal Fyn er et samarbejdsprojekt mellem de fynske folkebiblioteker støttet af Kulturregion Fyn · Om Kunstportalfyn.dk · Kontakt os</div>
+    <div class="credit">Kunstportal Fyn er et samarbejdsprojekt mellem de fynske folkebiblioteker støttet af Kulturregion Fyn · <a href="/content/fakta" >Om Kunstportalfyn.dk </a> · <a href="/content/kontakt"> Kontakt os</a></div>
     <?php
       if($page['mobile_detect']["is_mobile"]):?>
       <?php if ($_GET['m'] == 1) : ?>

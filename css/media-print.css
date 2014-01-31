@@ -102,3 +102,10 @@ img.print-logo {border: 0;}
     overflow: hidden;
     position: relative;
 }
+.profile .user-picture{
+  float: none;
+  text-align: center;
+}
+.profile .field-items {
+    width: 100%;
+}

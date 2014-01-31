@@ -96,8 +96,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   outline: 0;
 }
 body {
+  line-height: 1.6875;
   background-color: #ccc;
-  line-height: 1;
 }
 img {
   max-width: 100%
@@ -525,7 +525,7 @@ h1.page-title {
   padding-top: 15px;
 }
 h2.pane-title {
-  font-size: 26px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 #main #content .node-teaser {

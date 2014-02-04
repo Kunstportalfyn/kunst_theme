@@ -256,11 +256,13 @@ body, input, textarea {
 }
 
 a {
-  color: #A53D78;
+  color: #a42978; /*A53D78-a42978*/
   text-decoration: none;
 }
 a:focus, a:hover {
   text-decoration: none;
+  /*color: #d05898;*/
+  background-color: #ddd;
 }
 a:active{
   text-decoration: underline;
@@ -1252,6 +1254,7 @@ footer .links.inline {
 }
 .block-menu-tree a:hover, .pane-menu-tree a:hover {
   color: gray;
+  background-color: inherit;
 }
 div.inline-block {
   display: table-cell;

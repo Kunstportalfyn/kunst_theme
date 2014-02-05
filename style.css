@@ -2048,3 +2048,16 @@ body.cke_editable {
 .ding-campaign-item p {
   margin: 0;
 }
+
+@media screen and (min-width: 785px) {
+  .expandable-indicator i {
+    display: inline;
+  }
+}
+
+
+@media screen and (max-width: 784px) {
+  .expandable-indicator i {
+    display: none;
+  }
+}

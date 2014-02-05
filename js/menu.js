@@ -17,7 +17,7 @@
   function addExpandable() {
     var div = '<div class="expandable-indicator"><i class="icon-caret-right"> </i></div>';
     var $aArr = $("#block-menu-block-1 ul.menu > li");
-    if($aArr.length === 0) $aArr = $("#rm-removed ul.menu > li");
+    if($aArr.length === 0) $aArr = $("ul#rm-removed > li");
     $aArr.each(function(i, a){
       $a = $(a).find(">a");
       //console.log($a.html());

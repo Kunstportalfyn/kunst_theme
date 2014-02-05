@@ -425,7 +425,6 @@ sub {
 .view-exhibitor-lists table tr td,
 .view-profil-liste table tr td,
 .view-editors table tr td {
-  padding: 5px 10px;
   border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
 }

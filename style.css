@@ -403,28 +403,25 @@ sub {
 }
 
 .view-exhibitor-lists th,
-.view-exhibitor-lists th.views-field-field-navn a,
-.view-exhibitor-lists th.views-field-field-last-name a,
 .view-profil-liste th,
-.view-profil-liste th.views-field-field-navn a,
-.view-profil-liste th.views-field-field-last-name a,
-.view-editors th,
-.view-editors th.views-field-field-navn a, 
-.view-editors th.views-field-field-last-name a {
+.view-editors th {
   font-weight: bold;
+  padding: 10px 10px;
   background: #555;
   color: #fff;
+  white-space: nowrap;
 }
 
-.view-exhibitor-lists table tr,
-.view-profil-liste table tr,
-.view-editors table tr {
-  padding: 5px 5px;
+.view-editors th a, 
+.view-profil-liste th a,
+.view-exhibitor-lists th a {
+  color: #fff;
 }
 
 .view-exhibitor-lists table tr td,
 .view-profil-liste table tr td,
 .view-editors table tr td {
+  padding: 5px 10px;
   border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
 }

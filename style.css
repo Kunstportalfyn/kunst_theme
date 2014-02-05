@@ -412,7 +412,6 @@ sub {
 .view-editors th.views-field-field-navn a, 
 .view-editors th.views-field-field-last-name a {
   font-weight: bold;
-  padding: 10px 10px;
   background: #555;
   color: #fff;
 }

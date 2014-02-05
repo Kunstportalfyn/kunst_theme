@@ -410,6 +410,8 @@ sub {
   background: #555;
   color: #fff;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .view-editors th a, 
@@ -1908,7 +1910,16 @@ ul.inline, ul.links.inline {
  */
 
 @media screen and (max-width: 479px) {
-
+  .view-exhibitor-lists table tr th.views-field-field-home-page,
+  .view-exhibitor-lists table tr th.views-field-field-email,
+  .view-exhibitor-lists table tr th.views-field-field-geocode,
+  .view-profil-liste table tr th.views-field-field-home-page,
+  .view-profil-liste table tr th.views-field-field-email,
+  .view-profil-liste table tr th.views-field-field-geocode {
+    max-width: 12px!important;
+    color: #555;
+  }
+  
   #site-name {
     font-size: 26px;
     line-height: 36px;

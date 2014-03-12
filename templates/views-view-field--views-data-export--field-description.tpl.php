@@ -25,5 +25,5 @@
 <?php
 $pagebreaks = array("<br />");
 $new_output = str_replace($pagebreaks, "\n", $output);
-print $output;
+print $new_output;
 ?>

@@ -176,17 +176,17 @@ header, hgroup, footer, section, article, aside {
 }
 
 /* tabroll */
-#featured .ui-tabs-nav li.ui-tabs-selected:after {
+#featured .ui-tabs-nav li.ui-tabs-active:after {
   border-right-color: #60ae97;
 }
-#featured .ui-tabs-nav .ui-tabs-selected a {
+#featured .ui-tabs-nav .ui-tabs-active a {
   background-color: #60ae97;
 }
 #featured .ui-tabs-nav .ui-tabs-nav-item a:hover {
   background-color: #80ceb7;
 }
 
-#featured .ui-tabs-nav li.ui-tabs-selected:hover:after {
+#featured .ui-tabs-nav li.ui-tabs-active:hover:after {
   border-right-color: #80ceb7;
 }
 
